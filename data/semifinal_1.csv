@@ -1,0 +1,509 @@
+Season,Gamecode,TYPE,NUMBEROFPLAY,CODETEAM,PLAYER_ID,PLAYTYPE,PLAYER,TEAM,DORSAL,MINUTE,MARKERTIME,POINTS_A,POINTS_B,COMMENT,PLAYINFO,PERIOD,TRUE_NUMBEROFPLAY
+2025,404,0,2,,,BP,,,,1,,,,,Begin Period,1,0
+2025,404,0,3,ULK,,JB,,Fenerbahce Beko Istanbul,,1,09:57,,,,Jump Ball (1),1,1
+2025,404,0,4,ULK,P002849,3FGA,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,1,09:39,,,,Missed Three Pointer (0/1 -  0 pt),1,2
+2025,404,0,5,OLY,P001255,D,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,1,09:37,,,,Def Rebound (1),1,3
+2025,404,0,6,OLY,P003469,3FGA,"VEZENKOV, SASHA",Olympiacos Piraeus,14,1,09:22,,,,Missed Three Pointer (0/1 -  0 pt),1,4
+2025,404,0,7,ULK,P014124,D,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,1,09:20,,,,Def Rebound (1),1,5
+2025,404,0,8,ULK,P007182,OF,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,1,09:11,,,,Offensive Foul (1),1,6
+2025,404,0,9,ULK,P007182,TO,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,1,09:11,,,,Turnover (1),1,7
+2025,404,0,10,OLY,P008855,RV,"WALKUP, THOMAS",Olympiacos Piraeus,0,1,09:11,,,,Foul Drawn (1),1,8
+2025,404,0,12,OLY,P009849,3FGA,"DORSEY, TYLER",Olympiacos Piraeus,22,2,08:54,,,,Missed Three Pointer (0/1 -  0 pt),1,9
+2025,404,0,13,ULK,,D,,Fenerbahce Beko Istanbul,,2,08:54,,,,Def Rebound (1),1,10
+2025,404,0,14,ULK,P006961,TO,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,2,08:33,,,,Turnover (1),1,11
+2025,404,0,15,OLY,P001255,TO,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,2,08:21,,,,Turnover (1),1,12
+2025,404,0,16,ULK,P007182,ST,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,2,08:20,,,,Steal (1),1,13
+2025,404,0,17,ULK,P014124,3FGA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,2,08:06,,,,Missed Three Pointer (0/1 -  0 pt),1,14
+2025,404,0,18,OLY,P008855,D,"WALKUP, THOMAS",Olympiacos Piraeus,0,2,08:04,,,,Def Rebound (1),1,15
+2025,404,0,20,OLY,P001255,3FGA,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,3,07:58,,,,Missed Three Pointer (0/1 -  0 pt),1,16
+2025,404,0,21,ULK,P014124,D,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,3,07:56,,,,Def Rebound (2),1,17
+2025,404,0,22,ULK,P014124,OF,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,3,07:53,,,,Offensive Foul (1),1,18
+2025,404,0,23,ULK,P014124,TO,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,3,07:53,,,,Turnover (1),1,19
+2025,404,0,24,OLY,P008855,RV,"WALKUP, THOMAS",Olympiacos Piraeus,0,3,07:53,,,,Foul Drawn (2),1,20
+2025,404,0,25,ULK,P014220,IN,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,3,07:53,,,,In,1,21
+2025,404,0,26,ULK,P007182,OUT,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,3,07:53,,,,Out,1,22
+2025,404,0,27,OLY,P008855,2FGM,"WALKUP, THOMAS",Olympiacos Piraeus,0,3,07:28,2.0,,,Two Pointer (1/1 -  2 pt),1,23
+2025,404,0,28,ULK,P011205,3FGA,"HALL, DEVON",Fenerbahce Beko Istanbul,20,3,07:01,,,,Missed Three Pointer (0/1 -  0 pt),1,24
+2025,404,0,30,OLY,P008855,D,"WALKUP, THOMAS",Olympiacos Piraeus,0,4,06:59,,,,Def Rebound (2),1,25
+2025,404,0,31,OLY,P008855,TO,"WALKUP, THOMAS",Olympiacos Piraeus,0,4,06:52,,,,Turnover (1),1,26
+2025,404,0,32,ULK,P006961,ST,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,4,06:50,,,,Steal (1),1,27
+2025,404,0,33,ULK,P014124,3FGA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,4,06:32,,,,Missed Three Pointer (0/2 -  0 pt),1,28
+2025,404,0,34,OLY,,D,,Olympiacos Piraeus,,4,06:32,,,,Def Rebound (2),1,29
+2025,404,0,35,ULK,P009863,IN,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,4,06:32,,,,In,1,30
+2025,404,0,36,ULK,P014124,OUT,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,4,06:32,,,,Out,1,31
+2025,404,0,37,OLY,P003941,2FGA,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,4,06:10,,,,Missed Two Pointer (0/1 -  0 pt),1,32
+2025,404,0,38,ULK,P009863,D,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,4,06:08,,,,Def Rebound (1),1,33
+2025,404,0,51,ULK,P002849,2FGA,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,5,05:58,,,,Missed Two Pointer (0/1 -  0 pt),1,34
+2025,404,0,41,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,5,05:56,,,,Def Rebound (1),1,35
+2025,404,0,42,OLY,P009849,3FGM,"DORSEY, TYLER",Olympiacos Piraeus,22,5,05:41,5.0,,,Three Pointer (1/2 -  3 pt),1,36
+2025,404,0,43,ULK,P011205,2FGA,"HALL, DEVON",Fenerbahce Beko Istanbul,20,5,05:15,,,,Missed Two Pointer (0/1 -  0 pt),1,37
+2025,404,0,44,OLY,P008855,D,"WALKUP, THOMAS",Olympiacos Piraeus,0,5,05:12,,,,Def Rebound (3),1,38
+2025,404,0,45,OLY,P009849,3FGM,"DORSEY, TYLER",Olympiacos Piraeus,22,5,05:07,8.0,,,Three Pointer (2/3 -  6 pt),1,39
+2025,404,0,47,ULK,P014220,OF,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,6,04:54,,,,Offensive Foul (1),1,40
+2025,404,0,48,ULK,P014220,TO,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,6,04:54,,,,Turnover (1),1,41
+2025,404,0,49,OLY,P008855,RV,"WALKUP, THOMAS",Olympiacos Piraeus,0,6,04:54,,,,Foul Drawn (3),1,42
+2025,404,0,50,,,TOUT_TV,,,,6,04:54,,,,TV Time Out (1),1,43
+2025,404,0,52,OLY,,TO,,Olympiacos Piraeus,,6,04:29,,,,Turnover (1),1,44
+2025,404,0,53,ULK,P002100,IN,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,6,04:29,,,,In,1,45
+2025,404,0,54,ULK,P011205,OUT,"HALL, DEVON",Fenerbahce Beko Istanbul,20,6,04:29,,,,Out,1,46
+2025,404,0,55,ULK,P014220,2FGA,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,6,04:09,,,,Missed Two Pointer (0/1 -  0 pt),1,47
+2025,404,0,56,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,6,04:08,,,,Def Rebound (2),1,48
+2025,404,0,58,OLY,P003469,2FGM,"VEZENKOV, SASHA",Olympiacos Piraeus,14,7,03:56,10.0,,,Two Pointer (1/1 -  2 pt),1,49
+2025,404,0,59,OLY,P008855,AS,"WALKUP, THOMAS",Olympiacos Piraeus,0,7,03:56,,,,Assist (1),1,50
+2025,404,0,60,ULK,,TOUT,,Fenerbahce Beko Istanbul,,7,03:56,,,,Time Out (1),1,51
+2025,404,0,61,ULK,P014220,2FGA,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,7,03:38,,,,Missed Two Pointer (0/2 -  0 pt),1,52
+2025,404,0,62,ULK,P014220,O,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,7,03:36,,,,Off Rebound (1),1,53
+2025,404,0,63,ULK,P009863,2FGA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,7,03:31,,,,Missed Two Pointer (0/1 -  0 pt),1,54
+2025,404,0,64,OLY,,D,,Olympiacos Piraeus,,7,03:31,,,,Def Rebound (3),1,55
+2025,404,0,65,OLY,P003941,OUT,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,7,03:31,,,,Out,1,56
+2025,404,0,66,OLY,P011196,IN,"HALL, DONTA",Olympiacos Piraeus,45,7,03:31,,,,In,1,57
+2025,404,0,67,ULK,P014124,IN,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,7,03:31,,,,In,1,58
+2025,404,0,68,ULK,P006961,OUT,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,7,03:31,,,,Out,1,59
+2025,404,0,69,ULK,P014220,OUT,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,7,03:31,,,,Out,1,60
+2025,404,0,70,ULK,P007182,IN,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,7,03:31,,,,In,1,61
+2025,404,0,71,OLY,P009849,RV,"DORSEY, TYLER",Olympiacos Piraeus,22,7,03:18,,,,Foul Drawn (1),1,62
+2025,404,0,72,ULK,P009863,CM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,7,03:18,,,,Foul (1),1,63
+2025,404,0,73,OLY,P009849,FTM,"DORSEY, TYLER",Olympiacos Piraeus,22,7,03:18,11.0,,,Free Throw In (1/1 -  7 pt),1,64
+2025,404,0,74,OLY,P009849,FTM,"DORSEY, TYLER",Olympiacos Piraeus,22,7,03:18,12.0,,,Free Throw In (2/2 -  8 pt),1,65
+2025,404,0,75,ULK,P007182,2FGM,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,7,03:04,12.0,2.0,,Two Pointer (1/1 -  2 pt),1,66
+2025,404,0,76,ULK,P002100,AS,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,7,03:02,,,,Assist (1),1,67
+2025,404,0,78,OLY,P009849,3FGA,"DORSEY, TYLER",Olympiacos Piraeus,22,8,02:43,,,,Missed Three Pointer (2/4 -  8 pt),1,68
+2025,404,0,79,ULK,P002849,D,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,8,02:40,,,,Def Rebound (1),1,69
+2025,404,0,80,ULK,P002100,3FGM,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,8,02:33,12.0,5.0,,Three Pointer (1/1 -  3 pt),1,70
+2025,404,0,81,ULK,P009863,AS,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,8,02:33,,,,Assist (1),1,71
+2025,404,0,82,ULK,P002100,CM,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,8,02:27,,,,Foul (1),1,72
+2025,404,0,83,OLY,P009849,RV,"DORSEY, TYLER",Olympiacos Piraeus,22,8,02:27,,,,Foul Drawn (2),1,73
+2025,404,0,84,OLY,P012610,IN,"WARD, TYSON",Olympiacos Piraeus,3,8,02:27,,,,In,1,74
+2025,404,0,85,OLY,P001255,OUT,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,8,02:27,,,,Out,1,75
+2025,404,0,86,OLY,P009849,FTM,"DORSEY, TYLER",Olympiacos Piraeus,22,8,02:27,13.0,5.0,,Free Throw In (3/3 -  9 pt),1,76
+2025,404,0,87,OLY,P009849,FTA,"DORSEY, TYLER",Olympiacos Piraeus,22,8,02:27,,,,Missed Free Throw (3/4 -  9 pt),1,77
+2025,404,0,88,ULK,P007182,D,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,8,02:27,,,,Def Rebound (1),1,78
+2025,404,0,89,ULK,P009863,2FGM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,8,02:12,13.0,7.0,,Two Pointer (1/2 -  2 pt),1,79
+2025,404,0,91,ULK,P009863,CM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,9,01:59,,,,Foul (2),1,80
+2025,404,0,92,OLY,P009849,RV,"DORSEY, TYLER",Olympiacos Piraeus,22,9,01:59,,,,Foul Drawn (3),1,81
+2025,404,0,93,ULK,P009863,OUT,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,9,01:59,,,,Out,1,82
+2025,404,0,94,ULK,P002849,OUT,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,9,01:59,,,,Out,1,83
+2025,404,0,95,ULK,P006961,IN,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,9,01:59,,,,In,1,84
+2025,404,0,96,ULK,P011205,IN,"HALL, DEVON",Fenerbahce Beko Istanbul,20,9,01:59,,,,In,1,85
+2025,404,0,97,OLY,P009849,FTM,"DORSEY, TYLER",Olympiacos Piraeus,22,9,01:59,14.0,7.0,,Free Throw In (4/5 -  10 pt),1,86
+2025,404,0,98,OLY,P009849,FTM,"DORSEY, TYLER",Olympiacos Piraeus,22,9,01:59,15.0,7.0,,Free Throw In (5/6 -  11 pt),1,87
+2025,404,0,99,OLY,P009849,OUT,"DORSEY, TYLER",Olympiacos Piraeus,22,9,01:59,,,,Out,1,88
+2025,404,0,100,OLY,P013380,IN,"FOURNIER, EVAN",Olympiacos Piraeus,94,9,01:59,,,,In,1,89
+2025,404,0,101,OLY,P012610,CM,"WARD, TYSON",Olympiacos Piraeus,3,9,01:49,,,,Foul (1),1,90
+2025,404,0,102,ULK,P011205,RV,"HALL, DEVON",Fenerbahce Beko Istanbul,20,9,01:49,,,,Foul Drawn (1),1,91
+2025,404,0,103,OLY,P013380,CM,"FOURNIER, EVAN",Olympiacos Piraeus,94,9,01:49,,,,Foul (1),1,92
+2025,404,0,104,ULK,P002100,RV,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,9,01:49,,,,Foul Drawn (1),1,93
+2025,404,0,105,ULK,P011205,3FGA,"HALL, DEVON",Fenerbahce Beko Istanbul,20,9,01:39,,,,Missed Three Pointer (0/2 -  0 pt),1,94
+2025,404,0,106,OLY,P003469,D,"VEZENKOV, SASHA",Olympiacos Piraeus,14,9,01:37,,,,Def Rebound (1),1,95
+2025,404,0,107,OLY,P013380,3FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,9,01:17,,,,Missed Three Pointer (0/1 -  0 pt),1,96
+2025,404,0,108,ULK,P007182,D,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,9,01:15,,,,Def Rebound (2),1,97
+2025,404,0,109,ULK,P006961,3FGA,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,9,01:01,,,,Missed Three Pointer (0/1 -  0 pt),1,98
+2025,404,0,110,OLY,,D,,Olympiacos Piraeus,,9,01:02,,,,Def Rebound (4),1,99
+2025,404,0,111,ULK,P007182,CM,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,9,01:02,,,,Foul (2),1,100
+2025,404,0,112,OLY,P011196,RV,"HALL, DONTA",Olympiacos Piraeus,45,9,01:02,,,,Foul Drawn (1),1,101
+2025,404,0,113,ULK,P002849,IN,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,9,01:02,,,,In,1,102
+2025,404,0,114,ULK,P007182,OUT,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,9,01:02,,,,Out,1,103
+2025,404,0,115,OLY,P011196,FTA,"HALL, DONTA",Olympiacos Piraeus,45,9,01:02,,,,Missed Free Throw (0/1 -  0 pt),1,104
+2025,404,0,116,OLY,P011196,FTA,"HALL, DONTA",Olympiacos Piraeus,45,9,01:02,,,,Missed Free Throw (0/2 -  0 pt),1,105
+2025,404,0,117,ULK,P002100,D,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,9,01:02,,,,Def Rebound (1),1,106
+2025,404,0,119,OLY,P011196,CM,"HALL, DONTA",Olympiacos Piraeus,45,10,00:49,,,,Foul (1),1,107
+2025,404,0,120,ULK,P002100,RV,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,10,00:49,,,,Foul Drawn (2),1,108
+2025,404,0,121,ULK,P006961,2FGM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,10,00:38,15.0,9.0,,Two Pointer (1/1 -  2 pt),1,109
+2025,404,0,122,OLY,P012610,3FGM,"WARD, TYSON",Olympiacos Piraeus,3,10,00:20,18.0,9.0,,Three Pointer (1/1 -  3 pt),1,110
+2025,404,0,123,ULK,P014124,2FGM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,10,00:05,18.0,11.0,,Two Pointer (1/1 -  2 pt),1,111
+2025,404,0,124,OLY,P011196,CM,"HALL, DONTA",Olympiacos Piraeus,45,10,00:05,,,,Foul (2),1,112
+2025,404,0,125,ULK,P014124,RV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,10,00:05,,,,Foul Drawn (1),1,113
+2025,404,0,126,ULK,P014124,FTM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,10,00:05,18.0,12.0,,Free Throw In (1/1 -  3 pt),1,114
+2025,404,0,127,ULK,P002100,OUT,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,10,00:05,,,,Out,1,115
+2025,404,0,128,ULK,P007929,IN,"BITIM, ONURALP",Fenerbahce Beko Istanbul,17,10,00:05,,,,In,1,116
+2025,404,0,129,OLY,P003469,2FGA,"VEZENKOV, SASHA",Olympiacos Piraeus,14,10,00:00,,,,Missed Two Pointer (1/2 -  2 pt),1,117
+2025,404,0,131,,,EP,,,,11,,,,,End Period,1,118
+2025,404,0,142,,,BP,,,,11,,,,,Begin Period,2,119
+2025,404,0,132,OLY,P008855,OUT,"WALKUP, THOMAS",Olympiacos Piraeus,0,11,10:00,,,,Out,2,120
+2025,404,0,133,OLY,P003469,OUT,"VEZENKOV, SASHA",Olympiacos Piraeus,14,11,10:00,,,,Out,2,121
+2025,404,0,134,OLY,P008829,IN,"PETERS, ALEC",Olympiacos Piraeus,25,11,10:00,,,,In,2,122
+2025,404,0,135,OLY,P014316,IN,"JOSEPH, CORY",Olympiacos Piraeus,34,11,10:00,,,,In,2,123
+2025,404,0,136,OLY,P011196,OUT,"HALL, DONTA",Olympiacos Piraeus,45,11,10:00,,,,Out,2,124
+2025,404,0,137,OLY,P011981,IN,"JONES, TYRIQUE",Olympiacos Piraeus,88,11,10:00,,,,In,2,125
+2025,404,0,138,ULK,P009863,IN,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,11,10:00,,,,In,2,126
+2025,404,0,139,ULK,P006961,OUT,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,11,10:00,,,,Out,2,127
+2025,404,0,140,ULK,P007929,OUT,"BITIM, ONURALP",Fenerbahce Beko Istanbul,17,11,10:00,,,,Out,2,128
+2025,404,0,141,ULK,P012613,IN,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,11,10:00,,,,In,2,129
+2025,404,0,143,OLY,P013380,2FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,11,09:42,,,,Missed Two Pointer (0/1 -  0 pt),2,130
+2025,404,0,144,OLY,P012610,O,"WARD, TYSON",Olympiacos Piraeus,3,11,09:40,,,,Off Rebound (1),2,131
+2025,404,0,145,OLY,P012610,2FGM,"WARD, TYSON",Olympiacos Piraeus,3,11,09:38,20.0,12.0,,Two Pointer (1/1 -  5 pt),2,132
+2025,404,0,146,OLY,P008829,CM,"PETERS, ALEC",Olympiacos Piraeus,25,11,09:28,,,,Foul (1),2,133
+2025,404,0,147,ULK,P009863,RV,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,11,09:28,,,,Foul Drawn (1),2,134
+2025,404,0,148,ULK,P014124,3FGA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,11,09:20,,,,Missed Three Pointer (0/3 -  3 pt),2,135
+2025,404,0,149,OLY,P011981,D,"JONES, TYRIQUE",Olympiacos Piraeus,88,11,09:18,,,,Def Rebound (1),2,136
+2025,404,0,151,OLY,P014316,3FGA,"JOSEPH, CORY",Olympiacos Piraeus,34,12,08:54,,,,Missed Three Pointer (0/1 -  0 pt),2,137
+2025,404,0,152,ULK,P002849,D,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,12,08:52,,,,Def Rebound (2),2,138
+2025,404,0,153,ULK,P002849,TO,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,12,08:34,,,,Turnover (1),2,139
+2025,404,0,154,OLY,P014316,ST,"JOSEPH, CORY",Olympiacos Piraeus,34,12,08:32,,,,Steal (1),2,140
+2025,404,0,155,OLY,P012610,2FGA,"WARD, TYSON",Olympiacos Piraeus,3,12,08:30,,,,Missed Two Pointer (1/2 -  5 pt),2,141
+2025,404,0,156,OLY,P012610,AG,"WARD, TYSON",Olympiacos Piraeus,3,12,08:30,,,,Shot Rejected (1),2,142
+2025,404,0,157,ULK,P014124,FV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,12,08:30,,,,Block (1),2,143
+2025,404,0,158,OLY,,O,,Olympiacos Piraeus,,12,08:30,,,,Off Rebound (1),2,144
+2025,404,0,159,OLY,P008829,2FGM,"PETERS, ALEC",Olympiacos Piraeus,25,12,08:18,22.0,12.0,,Two Pointer (1/1 -  2 pt),2,145
+2025,404,0,160,OLY,P012610,AS,"WARD, TYSON",Olympiacos Piraeus,3,12,08:16,,,,Assist (1),2,146
+2025,404,0,162,OLY,P014316,CM,"JOSEPH, CORY",Olympiacos Piraeus,34,13,07:59,,,,Foul (1),2,147
+2025,404,0,163,ULK,P011205,RV,"HALL, DEVON",Fenerbahce Beko Istanbul,20,13,07:59,,,,Foul Drawn (2),2,148
+2025,404,0,164,ULK,P014124,OUT,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,13,07:59,,,,Out,2,149
+2025,404,0,165,ULK,P009783,IN,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,13,07:59,,,,In,2,150
+2025,404,0,166,ULK,P011205,TO,"HALL, DEVON",Fenerbahce Beko Istanbul,20,13,07:49,,,,Turnover (1),2,151
+2025,404,0,167,OLY,P014316,ST,"JOSEPH, CORY",Olympiacos Piraeus,34,13,07:48,,,,Steal (2),2,152
+2025,404,0,168,ULK,P002849,CM,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,13,07:36,,,,Foul (1),2,153
+2025,404,0,169,OLY,P011981,RV,"JONES, TYRIQUE",Olympiacos Piraeus,88,13,07:36,,,,Foul Drawn (1),2,154
+2025,404,0,170,OLY,P011981,FTM,"JONES, TYRIQUE",Olympiacos Piraeus,88,13,07:36,23.0,12.0,,Free Throw In (1/1 -  1 pt),2,155
+2025,404,0,171,OLY,P013380,AS,"FOURNIER, EVAN",Olympiacos Piraeus,94,13,07:36,,,,Assist (1),2,156
+2025,404,0,172,OLY,P011981,FTM,"JONES, TYRIQUE",Olympiacos Piraeus,88,13,07:36,24.0,12.0,,Free Throw In (2/2 -  2 pt),2,157
+2025,404,0,173,ULK,P012613,2FGA,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,13,07:23,,,,Missed Two Pointer (0/1 -  0 pt),2,158
+2025,404,0,174,OLY,P011981,D,"JONES, TYRIQUE",Olympiacos Piraeus,88,13,07:21,,,,Def Rebound (2),2,159
+2025,404,0,176,OLY,P008829,2FGM,"PETERS, ALEC",Olympiacos Piraeus,25,14,06:58,26.0,12.0,,Two Pointer (2/2 -  4 pt),2,160
+2025,404,0,177,OLY,P013380,AS,"FOURNIER, EVAN",Olympiacos Piraeus,94,14,06:56,,,,Assist (2),2,161
+2025,404,0,178,ULK,P002849,TO,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,14,06:34,,,,Turnover (2),2,162
+2025,404,0,179,ULK,P002849,OUT,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,14,06:34,,,,Out,2,163
+2025,404,0,180,ULK,P002100,IN,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,14,06:34,,,,In,2,164
+2025,404,0,181,ULK,P011205,OUT,"HALL, DEVON",Fenerbahce Beko Istanbul,20,14,06:34,,,,Out,2,165
+2025,404,0,182,ULK,P014220,IN,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,14,06:34,,,,In,2,166
+2025,404,0,183,OLY,P011981,TO,"JONES, TYRIQUE",Olympiacos Piraeus,88,14,06:23,,,,Turnover (1),2,167
+2025,404,0,185,ULK,P002100,2FGA,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,15,05:58,,,,Missed Two Pointer (0/1 -  3 pt),2,168
+2025,404,0,186,ULK,P009863,O,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,15,05:56,,,,Off Rebound (1),2,169
+2025,404,0,187,ULK,P009863,3FGA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,15,05:53,,,,Missed Three Pointer (0/1 -  2 pt),2,170
+2025,404,0,188,OLY,P013380,D,"FOURNIER, EVAN",Olympiacos Piraeus,94,15,05:51,,,,Def Rebound (1),2,171
+2025,404,0,189,ULK,P012613,CM,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,15,05:40,,,,Foul (1),2,172
+2025,404,0,190,OLY,P013380,RV,"FOURNIER, EVAN",Olympiacos Piraeus,94,15,05:40,,,,Foul Drawn (1),2,173
+2025,404,0,191,OLY,P003941,IN,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,15,05:40,,,,In,2,174
+2025,404,0,192,OLY,P011981,OUT,"JONES, TYRIQUE",Olympiacos Piraeus,88,15,05:40,,,,Out,2,175
+2025,404,0,193,ULK,P006961,IN,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,15,05:40,,,,In,2,176
+2025,404,0,194,ULK,P012613,OUT,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,15,05:40,,,,Out,2,177
+2025,404,0,195,OLY,P008829,2FGM,"PETERS, ALEC",Olympiacos Piraeus,25,15,05:25,28.0,12.0,,Two Pointer (3/3 -  6 pt),2,178
+2025,404,0,196,OLY,P003941,CM,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,15,05:07,,,,Foul (1),2,179
+2025,404,0,197,ULK,P014220,RV,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,15,05:07,,,,Foul Drawn (1),2,180
+2025,404,0,199,ULK,P002100,3FGA,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,16,04:56,,,,Missed Three Pointer (1/2 -  3 pt),2,181
+2025,404,0,200,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,16,04:54,,,,Def Rebound (3),2,182
+2025,404,0,201,ULK,P002100,CM,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,16,04:50,,,,Foul (2),2,183
+2025,404,0,202,OLY,P013380,RV,"FOURNIER, EVAN",Olympiacos Piraeus,94,16,04:50,,,,Foul Drawn (2),2,184
+2025,404,0,203,OLY,P012610,OUT,"WARD, TYSON",Olympiacos Piraeus,3,16,04:50,,,,Out,2,185
+2025,404,0,204,OLY,P007853,IN,"MCKISSIC, SHAQUIELLE",Olympiacos Piraeus,77,16,04:50,,,,In,2,186
+2025,404,0,205,,,TOUT_TV,,,,16,04:50,,,,TV Time Out (2),2,187
+2025,404,0,206,ULK,P002849,IN,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,16,04:50,,,,In,2,188
+2025,404,0,207,ULK,P009783,OUT,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,16,04:50,,,,Out,2,189
+2025,404,0,208,OLY,P013380,FTA,"FOURNIER, EVAN",Olympiacos Piraeus,94,16,04:50,,,,Missed Free Throw (0/1 -  0 pt),2,190
+2025,404,0,209,OLY,P013380,FTM,"FOURNIER, EVAN",Olympiacos Piraeus,94,16,04:50,29.0,12.0,,Free Throw In (1/2 -  1 pt),2,191
+2025,404,0,210,ULK,P009863,2FGA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,16,04:31,,,,Missed Two Pointer (1/3 -  2 pt),2,192
+2025,404,0,211,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,16,04:29,,,,Def Rebound (4),2,193
+2025,404,0,212,OLY,P013380,3FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,16,04:15,,,,Missed Three Pointer (0/2 -  1 pt),2,194
+2025,404,0,213,ULK,P009863,D,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,16,04:14,,,,Def Rebound (2),2,195
+2025,404,0,214,ULK,P014220,2FGM,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,16,04:04,29.0,14.0,,Two Pointer (1/3 -  2 pt),2,196
+2025,404,0,216,ULK,P006961,AS,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,17,03:59,,,,Assist (1),2,197
+2025,404,0,217,OLY,P007853,3FGA,"MCKISSIC, SHAQUIELLE",Olympiacos Piraeus,77,17,03:35,,,,Missed Three Pointer (0/1 -  0 pt),2,198
+2025,404,0,218,ULK,P002849,D,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,17,03:33,,,,Def Rebound (3),2,199
+2025,404,0,219,ULK,P006961,3FGM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,17,03:19,29.0,17.0,,Three Pointer (1/2 -  5 pt),2,200
+2025,404,0,220,ULK,P002849,AS,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,17,03:17,,,,Assist (1),2,201
+2025,404,0,222,OLY,P008829,3FGM,"PETERS, ALEC",Olympiacos Piraeus,25,18,02:54,32.0,17.0,,Three Pointer (1/1 -  9 pt),2,202
+2025,404,0,223,OLY,P007853,AS,"MCKISSIC, SHAQUIELLE",Olympiacos Piraeus,77,18,02:53,,,,Assist (1),2,203
+2025,404,0,224,ULK,,TOUT,,Fenerbahce Beko Istanbul,,18,02:53,,,,Time Out (1),2,204
+2025,404,0,225,OLY,P009849,IN,"DORSEY, TYLER",Olympiacos Piraeus,22,18,02:53,,,,In,2,205
+2025,404,0,226,OLY,P013380,OUT,"FOURNIER, EVAN",Olympiacos Piraeus,94,18,02:53,,,,Out,2,206
+2025,404,0,227,ULK,P014124,IN,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,18,02:53,,,,In,2,207
+2025,404,0,228,ULK,P002100,OUT,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,18,02:53,,,,Out,2,208
+2025,404,0,229,ULK,P011205,IN,"HALL, DEVON",Fenerbahce Beko Istanbul,20,18,02:53,,,,In,2,209
+2025,404,0,230,ULK,P014220,OUT,"SILVA, CHRIS",Fenerbahce Beko Istanbul,30,18,02:53,,,,Out,2,210
+2025,404,0,231,ULK,P006961,3FGM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,18,02:38,32.0,20.0,,Three Pointer (2/3 -  8 pt),2,211
+2025,404,0,232,OLY,P007853,RV,"MCKISSIC, SHAQUIELLE",Olympiacos Piraeus,77,18,02:27,,,,Foul Drawn (1),2,212
+2025,404,0,233,ULK,P006961,CM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,18,02:27,,,,Foul (1),2,213
+2025,404,0,234,OLY,P007853,FTA,"MCKISSIC, SHAQUIELLE",Olympiacos Piraeus,77,18,02:27,,,,Missed Free Throw (0/1 -  0 pt),2,214
+2025,404,0,235,OLY,P007853,FTM,"MCKISSIC, SHAQUIELLE",Olympiacos Piraeus,77,18,02:27,33.0,20.0,,Free Throw In (1/2 -  1 pt),2,215
+2025,404,0,236,OLY,P008829,CM,"PETERS, ALEC",Olympiacos Piraeus,25,18,02:10,,,,Foul (2),2,216
+2025,404,0,237,ULK,P014124,RV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,18,02:10,,,,Foul Drawn (2),2,217
+2025,404,0,238,ULK,P009863,OUT,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,18,02:10,,,,Out,2,218
+2025,404,0,239,ULK,P007182,IN,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,18,02:10,,,,In,2,219
+2025,404,0,240,OLY,P003469,IN,"VEZENKOV, SASHA",Olympiacos Piraeus,14,18,02:10,,,,In,2,220
+2025,404,0,241,OLY,P008829,OUT,"PETERS, ALEC",Olympiacos Piraeus,25,18,02:10,,,,Out,2,221
+2025,404,0,242,ULK,P014124,FTA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,18,02:10,,,,Missed Free Throw (1/2 -  3 pt),2,222
+2025,404,0,243,ULK,P014124,FTM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,18,02:10,33.0,21.0,,Free Throw In (2/3 -  4 pt),2,223
+2025,404,0,245,OLY,P009849,2FGA,"DORSEY, TYLER",Olympiacos Piraeus,22,19,01:53,,,,Missed Two Pointer (0/1 -  11 pt),2,224
+2025,404,0,246,OLY,P009849,AG,"DORSEY, TYLER",Olympiacos Piraeus,22,19,01:53,,,,Shot Rejected (1),2,225
+2025,404,0,247,ULK,P007182,FV,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,19,01:53,,,,Block (1),2,226
+2025,404,0,248,ULK,,D,,Fenerbahce Beko Istanbul,,19,01:53,,,,Def Rebound (5),2,227
+2025,404,0,249,ULK,P011205,3FGA,"HALL, DEVON",Fenerbahce Beko Istanbul,20,19,01:33,,,,Missed Three Pointer (0/3 -  0 pt),2,228
+2025,404,0,250,ULK,P006961,O,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,19,01:31,,,,Off Rebound (1),2,229
+2025,404,0,251,OLY,P014316,CM,"JOSEPH, CORY",Olympiacos Piraeus,34,19,01:27,,,,Foul (2),2,230
+2025,404,0,252,ULK,P007182,RV,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,19,01:27,,,,Foul Drawn (1),2,231
+2025,404,0,253,OLY,P008855,IN,"WALKUP, THOMAS",Olympiacos Piraeus,0,19,01:27,,,,In,2,232
+2025,404,0,254,OLY,P014316,OUT,"JOSEPH, CORY",Olympiacos Piraeus,34,19,01:27,,,,Out,2,233
+2025,404,0,255,ULK,P007182,FTM,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,19,01:27,33.0,22.0,,Free Throw In (1/1 -  3 pt),2,234
+2025,404,0,256,ULK,P002849,AS,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,19,01:27,,,,Assist (2),2,235
+2025,404,0,257,ULK,P007182,FTA,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,19,01:27,,,,Missed Free Throw (1/2 -  3 pt),2,236
+2025,404,0,258,OLY,P003469,D,"VEZENKOV, SASHA",Olympiacos Piraeus,14,19,01:27,,,,Def Rebound (2),2,237
+2025,404,0,259,OLY,P003941,2FGA,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,19,01:04,,,,Missed Two Pointer (0/2 -  0 pt),2,238
+2025,404,0,260,ULK,P006961,D,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,19,01:02,,,,Def Rebound (1),2,239
+2025,404,0,262,ULK,P006961,3FGA,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,20,00:54,,,,Missed Three Pointer (2/4 -  8 pt),2,240
+2025,404,0,263,OLY,P003469,D,"VEZENKOV, SASHA",Olympiacos Piraeus,14,20,00:52,,,,Def Rebound (3),2,241
+2025,404,0,264,OLY,P003469,2FGA,"VEZENKOV, SASHA",Olympiacos Piraeus,14,20,00:31,,,,Missed Two Pointer (1/3 -  2 pt),2,242
+2025,404,0,265,ULK,P007182,D,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,20,00:29,,,,Def Rebound (3),2,243
+2025,404,0,266,ULK,P002849,2FGM,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,20,00:24,33.0,24.0,,Two Pointer (1/2 -  2 pt),2,244
+2025,404,0,267,ULK,P014124,AS,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,20,00:24,,,,Assist (1),2,245
+2025,404,0,268,OLY,,TOUT,,Olympiacos Piraeus,,20,00:23,,,,Time Out (1),2,246
+2025,404,0,269,OLY,P008829,IN,"PETERS, ALEC",Olympiacos Piraeus,25,20,00:23,,,,In,2,247
+2025,404,0,270,OLY,P007853,OUT,"MCKISSIC, SHAQUIELLE",Olympiacos Piraeus,77,20,00:23,,,,Out,2,248
+2025,404,0,271,ULK,P012613,IN,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,20,00:23,,,,In,2,249
+2025,404,0,272,ULK,P007182,OUT,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,20,00:23,,,,Out,2,250
+2025,404,0,273,OLY,P009849,2FGA,"DORSEY, TYLER",Olympiacos Piraeus,22,20,00:00,,,,Missed Two Pointer (0/2 -  11 pt),2,251
+2025,404,0,275,,,EP,,,,21,,,,,End Period,2,252
+2025,404,0,280,,,BP,,,,21,,,,,Begin Period,3,253
+2025,404,0,276,OLY,P001255,IN,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,21,10:00,,,,In,3,254
+2025,404,0,277,OLY,P008829,OUT,"PETERS, ALEC",Olympiacos Piraeus,25,21,10:00,,,,Out,3,255
+2025,404,0,278,ULK,P012613,OUT,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,21,10:00,,,,Out,3,256
+2025,404,0,279,ULK,P007182,IN,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,21,10:00,,,,In,3,257
+2025,404,0,281,OLY,P003469,3FGM,"VEZENKOV, SASHA",Olympiacos Piraeus,14,21,09:43,36.0,24.0,,Three Pointer (1/2 -  5 pt),3,258
+2025,404,0,282,OLY,P008855,AS,"WALKUP, THOMAS",Olympiacos Piraeus,0,21,09:41,,,,Assist (2),3,259
+2025,404,0,283,ULK,P011205,2FGA,"HALL, DEVON",Fenerbahce Beko Istanbul,20,21,09:24,,,,Missed Two Pointer (0/2 -  0 pt),3,260
+2025,404,0,284,ULK,P007182,O,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,21,09:21,,,,Off Rebound (1),3,261
+2025,404,0,285,ULK,P007182,2FGA,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,21,09:21,,,,Missed Two Pointer (1/2 -  3 pt),3,262
+2025,404,0,286,OLY,P008855,D,"WALKUP, THOMAS",Olympiacos Piraeus,0,21,09:19,,,,Def Rebound (4),3,263
+2025,404,0,287,OLY,P003941,2FGM,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,21,09:15,38.0,24.0,,Two Pointer (1/3 -  2 pt),3,264
+2025,404,0,288,OLY,P003469,AS,"VEZENKOV, SASHA",Olympiacos Piraeus,14,21,09:13,,,,Assist (1),3,265
+2025,404,0,290,ULK,P006961,3FGA,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,22,08:49,,,,Missed Three Pointer (2/5 -  8 pt),3,266
+2025,404,0,291,OLY,P009849,D,"DORSEY, TYLER",Olympiacos Piraeus,22,22,08:47,,,,Def Rebound (1),3,267
+2025,404,0,292,OLY,P003469,2FGM,"VEZENKOV, SASHA",Olympiacos Piraeus,14,22,08:41,40.0,24.0,,Two Pointer (2/4 -  7 pt),3,268
+2025,404,0,294,ULK,P002849,3FGA,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,22,08:20,,,,Missed Three Pointer (0/2 -  2 pt),3,269
+2025,404,0,295,OLY,P001255,D,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,22,08:18,,,,Def Rebound (2),3,270
+2025,404,0,296,OLY,P009849,2FGM,"DORSEY, TYLER",Olympiacos Piraeus,22,22,08:10,42.0,24.0,,Two Pointer (1/3 -  13 pt),3,271
+2025,404,0,297,ULK,,TOUT,,Fenerbahce Beko Istanbul,,22,08:10,,,,Time Out (1),3,272
+2025,404,0,298,,,TOUT_TV,,,,22,08:10,,,,TV Time Out (3),3,273
+2025,404,0,299,ULK,P009863,IN,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,22,08:10,,,,In,3,274
+2025,404,0,302,ULK,P007182,OUT,"BIRCH, KHEM",Fenerbahce Beko Istanbul,92,22,08:10,,,,Out,3,275
+2025,404,0,304,OLY,P001255,CM,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,23,07:56,,,,Foul (1),3,276
+2025,404,0,305,ULK,P014124,RV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,23,07:56,,,,Foul Drawn (3),3,277
+2025,404,0,306,ULK,P011205,TO,"HALL, DEVON",Fenerbahce Beko Istanbul,20,23,07:46,,,,Turnover (2),3,278
+2025,404,0,307,OLY,P003469,2FGA,"VEZENKOV, SASHA",Olympiacos Piraeus,14,23,07:28,,,,Missed Two Pointer (2/5 -  7 pt),3,279
+2025,404,0,308,ULK,P006961,D,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,23,07:26,,,,Def Rebound (2),3,280
+2025,404,0,309,ULK,P002100,IN,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,23,07:15,,,,In,3,281
+2025,404,0,310,ULK,P011205,OUT,"HALL, DEVON",Fenerbahce Beko Istanbul,20,23,07:15,,,,Out,3,282
+2025,404,0,311,ULK,P014124,2FGA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,23,07:03,,,,Missed Two Pointer (1/2 -  4 pt),3,283
+2025,404,0,312,OLY,P009849,D,"DORSEY, TYLER",Olympiacos Piraeus,22,23,07:01,,,,Def Rebound (2),3,284
+2025,404,0,314,OLY,P009849,2FGM,"DORSEY, TYLER",Olympiacos Piraeus,22,24,06:49,44.0,24.0,,Two Pointer (2/4 -  15 pt),3,285
+2025,404,0,315,ULK,P009863,2FGM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,24,06:34,44.0,26.0,,Two Pointer (2/4 -  4 pt),3,286
+2025,404,0,316,OLY,P009849,3FGA,"DORSEY, TYLER",Olympiacos Piraeus,22,24,06:19,,,,Missed Three Pointer (2/5 -  15 pt),3,287
+2025,404,0,317,OLY,P009849,O,"DORSEY, TYLER",Olympiacos Piraeus,22,24,06:17,,,,Off Rebound (1),3,288
+2025,404,0,318,OLY,P009849,TO,"DORSEY, TYLER",Olympiacos Piraeus,22,24,06:13,,,,Turnover (1),3,289
+2025,404,0,319,ULK,P002849,ST,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,24,06:12,,,,Steal (1),3,290
+2025,404,0,320,OLY,P008855,CM,"WALKUP, THOMAS",Olympiacos Piraeus,0,24,06:11,,,,Foul (1),3,291
+2025,404,0,321,ULK,P014124,RV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,24,06:11,,,,Foul Drawn (4),3,292
+2025,404,0,322,ULK,P014124,FTM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,24,06:11,44.0,27.0,,Free Throw In (3/4 -  5 pt),3,293
+2025,404,0,323,ULK,P014124,FTM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,24,06:11,44.0,28.0,,Free Throw In (4/5 -  6 pt),3,294
+2025,404,0,324,OLY,P009849,3FGA,"DORSEY, TYLER",Olympiacos Piraeus,22,24,06:03,,,,Missed Three Pointer (2/6 -  15 pt),3,295
+2025,404,0,325,ULK,P002849,D,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,24,06:00,,,,Def Rebound (4),3,296
+2025,404,0,327,OLY,P008855,CM,"WALKUP, THOMAS",Olympiacos Piraeus,0,25,05:55,,,,Foul (2),3,297
+2025,404,0,328,ULK,P009863,RV,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,25,05:55,,,,Foul Drawn (2),3,298
+2025,404,0,329,ULK,P002100,3FGM,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,25,05:47,44.0,31.0,,Three Pointer (2/3 -  6 pt),3,299
+2025,404,0,330,ULK,P009863,AS,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,25,05:47,,,,Assist (2),3,300
+2025,404,0,331,ULK,P002100,CM,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,25,05:35,,,,Foul (3),3,301
+2025,404,0,332,OLY,P008855,RV,"WALKUP, THOMAS",Olympiacos Piraeus,0,25,05:35,,,,Foul Drawn (4),3,302
+2025,404,0,333,OLY,P003469,2FGA,"VEZENKOV, SASHA",Olympiacos Piraeus,14,25,05:27,,,,Missed Two Pointer (2/6 -  7 pt),3,303
+2025,404,0,334,OLY,P003941,O,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,25,05:25,,,,Off Rebound (1),3,304
+2025,404,0,335,OLY,P009849,TO,"DORSEY, TYLER",Olympiacos Piraeus,22,25,05:23,,,,Turnover (2),3,305
+2025,404,0,336,ULK,P009863,ST,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,25,05:22,,,,Steal (1),3,306
+2025,404,0,337,ULK,P009863,2FGA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,25,05:19,,,,Missed Two Pointer (2/5 -  4 pt),3,307
+2025,404,0,338,ULK,P014124,O,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,25,05:17,,,,Off Rebound (1),3,308
+2025,404,0,339,ULK,P006961,3FGM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,25,05:13,44.0,34.0,,Three Pointer (3/6 -  11 pt),3,309
+2025,404,0,340,ULK,P014124,AS,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,25,05:13,,,,Assist (2),3,310
+2025,404,0,341,OLY,P008855,3FGA,"WALKUP, THOMAS",Olympiacos Piraeus,0,25,05:12,,,,Missed Three Pointer (0/1 -  2 pt),3,311
+2025,404,0,342,ULK,P014124,D,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,25,05:12,,,,Def Rebound (3),3,312
+2025,404,0,344,OLY,P001255,CM,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,26,04:58,,,,Foul (2),3,313
+2025,404,0,345,ULK,P014124,RV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,26,04:58,,,,Foul Drawn (5),3,314
+2025,404,0,346,OLY,P009849,OUT,"DORSEY, TYLER",Olympiacos Piraeus,22,26,04:58,,,,Out,3,315
+2025,404,0,347,OLY,P013380,IN,"FOURNIER, EVAN",Olympiacos Piraeus,94,26,04:58,,,,In,3,316
+2025,404,0,348,ULK,P002849,OUT,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,26,04:58,,,,Out,3,317
+2025,404,0,349,ULK,P012613,IN,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,26,04:58,,,,In,3,318
+2025,404,0,350,ULK,P006961,3FGA,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,26,04:35,,,,Missed Three Pointer (3/7 -  11 pt),3,319
+2025,404,0,351,OLY,P008855,D,"WALKUP, THOMAS",Olympiacos Piraeus,0,26,04:33,,,,Def Rebound (5),3,320
+2025,404,0,352,OLY,P003469,2FGM,"VEZENKOV, SASHA",Olympiacos Piraeus,14,26,04:30,46.0,34.0,,Two Pointer (3/7 -  9 pt),3,321
+2025,404,0,353,OLY,P008855,AS,"WALKUP, THOMAS",Olympiacos Piraeus,0,26,04:28,,,,Assist (3),3,322
+2025,404,0,354,ULK,P012613,3FGA,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,26,04:09,,,,Missed Three Pointer (0/1 -  0 pt),3,323
+2025,404,0,355,OLY,P003469,D,"VEZENKOV, SASHA",Olympiacos Piraeus,14,26,04:05,,,,Def Rebound (4),3,324
+2025,404,0,357,OLY,P003469,2FGM,"VEZENKOV, SASHA",Olympiacos Piraeus,14,27,03:55,48.0,34.0,,Two Pointer (4/8 -  11 pt),3,325
+2025,404,0,358,OLY,P001255,AS,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,27,03:56,,,,Assist (1),3,326
+2025,404,0,359,ULK,,TOUT,,Fenerbahce Beko Istanbul,,27,03:56,,,,Time Out (2),3,327
+2025,404,0,360,OLY,P003941,OUT,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,27,03:56,,,,Out,3,328
+2025,404,0,361,OLY,P011981,IN,"JONES, TYRIQUE",Olympiacos Piraeus,88,27,03:56,,,,In,3,329
+2025,404,0,362,ULK,P014124,2FGM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,27,03:35,48.0,36.0,,Two Pointer (2/3 -  8 pt),3,330
+2025,404,0,363,ULK,P012613,CM,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,27,03:17,,,,Foul (2),3,331
+2025,404,0,364,OLY,P011981,RV,"JONES, TYRIQUE",Olympiacos Piraeus,88,27,03:17,,,,Foul Drawn (2),3,332
+2025,404,0,365,ULK,P002849,IN,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,27,03:17,,,,In,3,333
+2025,404,0,366,ULK,P006961,OUT,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,27,03:17,,,,Out,3,334
+2025,404,0,367,OLY,P011981,FTA,"JONES, TYRIQUE",Olympiacos Piraeus,88,27,03:17,,,,Missed Free Throw (2/3 -  2 pt),3,335
+2025,404,0,368,OLY,P011981,FTA,"JONES, TYRIQUE",Olympiacos Piraeus,88,27,03:17,,,,Missed Free Throw (2/4 -  2 pt),3,336
+2025,404,0,369,ULK,P009863,D,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,27,03:17,,,,Def Rebound (3),3,337
+2025,404,0,371,ULK,P012613,3FGA,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,28,02:57,,,,Missed Three Pointer (0/2 -  0 pt),3,338
+2025,404,0,372,OLY,P003469,D,"VEZENKOV, SASHA",Olympiacos Piraeus,14,28,02:55,,,,Def Rebound (5),3,339
+2025,404,0,373,OLY,P003469,3FGA,"VEZENKOV, SASHA",Olympiacos Piraeus,14,28,02:46,,,,Missed Three Pointer (1/3 -  11 pt),3,340
+2025,404,0,374,ULK,P014124,D,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,28,02:43,,,,Def Rebound (4),3,341
+2025,404,0,375,ULK,P014124,3FGM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,28,02:28,48.0,39.0,,Three Pointer (1/4 -  11 pt),3,342
+2025,404,0,376,ULK,P012613,AS,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,28,02:26,,,,Assist (1),3,343
+2025,404,0,377,ULK,P002100,CM,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,28,02:08,,,,Foul (4),3,344
+2025,404,0,378,OLY,P008855,RV,"WALKUP, THOMAS",Olympiacos Piraeus,0,28,02:08,,,,Foul Drawn (5),3,345
+2025,404,0,379,ULK,P002100,OUT,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,28,02:08,,,,Out,3,346
+2025,404,0,380,ULK,P011205,IN,"HALL, DEVON",Fenerbahce Beko Istanbul,20,28,02:08,,,,In,3,347
+2025,404,0,382,ULK,P002849,CM,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,28,02:01,,,,Foul (2),3,348
+2025,404,0,383,OLY,P013380,RV,"FOURNIER, EVAN",Olympiacos Piraeus,94,28,02:01,,,,Foul Drawn (3),3,349
+2025,404,0,385,OLY,P013380,3FGM,"FOURNIER, EVAN",Olympiacos Piraeus,94,29,01:53,51.0,39.0,,Three Pointer (1/3 -  4 pt),3,350
+2025,404,0,386,ULK,P014124,3FGA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,29,01:32,,,,Missed Three Pointer (1/5 -  11 pt),3,351
+2025,404,0,387,OLY,P013380,D,"FOURNIER, EVAN",Olympiacos Piraeus,94,29,01:28,,,,Def Rebound (2),3,352
+2025,404,0,388,ULK,P014124,OUT,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,29,01:21,,,,Out,3,353
+2025,404,0,389,ULK,P009783,IN,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,29,01:21,,,,In,3,354
+2025,404,0,390,OLY,P003469,3FGM,"VEZENKOV, SASHA",Olympiacos Piraeus,14,29,01:16,54.0,39.0,,Three Pointer (2/4 -  14 pt),3,355
+2025,404,0,391,OLY,P013380,AS,"FOURNIER, EVAN",Olympiacos Piraeus,94,29,01:14,,,,Assist (3),3,356
+2025,404,0,393,ULK,P009863,2FGM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,30,00:55,54.0,41.0,,Two Pointer (3/6 -  6 pt),3,357
+2025,404,0,394,OLY,P003469,2FGM,"VEZENKOV, SASHA",Olympiacos Piraeus,14,30,00:35,56.0,41.0,,Two Pointer (5/9 -  16 pt),3,358
+2025,404,0,395,ULK,P009863,TO,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,30,00:10,,,,Turnover (1),3,359
+2025,404,0,396,OLY,P011981,ST,"JONES, TYRIQUE",Olympiacos Piraeus,88,30,00:09,,,,Steal (1),3,360
+2025,404,0,397,OLY,P013380,3FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,30,00:04,,,,Missed Three Pointer (1/4 -  4 pt),3,361
+2025,404,0,398,ULK,,D,,Fenerbahce Beko Istanbul,,30,00:00,,,,Def Rebound (6),3,362
+2025,404,0,400,,,EP,,,,31,,,,,End Period,3,363
+2025,404,0,411,,,BP,,,,31,,,,,Begin Period,4,364
+2025,404,0,401,OLY,P008855,OUT,"WALKUP, THOMAS",Olympiacos Piraeus,0,31,10:00,,,,Out,4,365
+2025,404,0,402,OLY,P012610,IN,"WARD, TYSON",Olympiacos Piraeus,3,31,10:00,,,,In,4,366
+2025,404,0,403,OLY,P003469,OUT,"VEZENKOV, SASHA",Olympiacos Piraeus,14,31,10:00,,,,Out,4,367
+2025,404,0,404,OLY,P001255,OUT,"PAPANIKOLAOU, KOSTAS",Olympiacos Piraeus,16,31,10:00,,,,Out,4,368
+2025,404,0,405,OLY,P008829,IN,"PETERS, ALEC",Olympiacos Piraeus,25,31,10:00,,,,In,4,369
+2025,404,0,406,OLY,P014316,IN,"JOSEPH, CORY",Olympiacos Piraeus,34,31,10:00,,,,In,4,370
+2025,404,0,407,ULK,P002849,OUT,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,31,10:00,,,,Out,4,371
+2025,404,0,408,ULK,P014124,IN,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,31,10:00,,,,In,4,372
+2025,404,0,409,ULK,P006961,IN,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,31,10:00,,,,In,4,373
+2025,404,0,410,ULK,P009783,OUT,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,31,10:00,,,,Out,4,374
+2025,404,0,412,ULK,P006961,3FGM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,31,09:49,56.0,44.0,,Three Pointer (4/8 -  14 pt),4,375
+2025,404,0,413,ULK,P009863,AS,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,31,09:47,,,,Assist (3),4,376
+2025,404,0,414,OLY,P013380,3FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,31,09:22,,,,Missed Three Pointer (1/5 -  4 pt),4,377
+2025,404,0,415,ULK,P011205,D,"HALL, DEVON",Fenerbahce Beko Istanbul,20,31,09:19,,,,Def Rebound (1),4,378
+2025,404,0,416,OLY,P012610,CM,"WARD, TYSON",Olympiacos Piraeus,3,31,09:16,,,,Foul (2),4,379
+2025,404,0,417,ULK,P014124,RV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,31,09:16,,,,Foul Drawn (6),4,380
+2025,404,0,418,ULK,P006961,2FGM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,31,09:10,56.0,46.0,,Two Pointer (2/2 -  16 pt),4,381
+2025,404,0,419,OLY,P012610,CM,"WARD, TYSON",Olympiacos Piraeus,3,31,09:10,,,,Foul (3),4,382
+2025,404,0,420,ULK,P006961,RV,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,31,09:10,,,,Foul Drawn (1),4,383
+2025,404,0,421,ULK,P006961,FTM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,31,09:10,56.0,47.0,,Free Throw In (1/1 -  17 pt),4,384
+2025,404,0,423,OLY,P012610,3FGA,"WARD, TYSON",Olympiacos Piraeus,3,32,08:50,,,,Missed Three Pointer (1/2 -  5 pt),4,385
+2025,404,0,424,ULK,P009863,D,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,32,08:48,,,,Def Rebound (4),4,386
+2025,404,0,425,ULK,P014124,2FGM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,32,08:44,56.0,49.0,,Two Pointer (3/4 -  13 pt),4,387
+2025,404,0,426,ULK,P009863,AS,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,32,08:43,,,,Assist (4),4,388
+2025,404,0,427,ULK,P006961,CM,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,32,08:29,,,,Foul (2),4,389
+2025,404,0,428,OLY,P008829,RV,"PETERS, ALEC",Olympiacos Piraeus,25,32,08:29,,,,Foul Drawn (1),4,390
+2025,404,0,429,OLY,,TOUT,,Olympiacos Piraeus,,32,08:29,,,,Time Out (1),4,391
+2025,404,0,430,,,TOUT_TV,,,,32,08:29,,,,TV Time Out (4),4,392
+2025,404,0,431,OLY,P003941,IN,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,32,08:29,,,,In,4,393
+2025,404,0,432,OLY,P011981,OUT,"JONES, TYRIQUE",Olympiacos Piraeus,88,32,08:29,,,,Out,4,394
+2025,404,0,433,OLY,P003941,RV,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,32,08:21,,,,Foul Drawn (1),4,395
+2025,404,0,434,ULK,P011205,CM,"HALL, DEVON",Fenerbahce Beko Istanbul,20,32,08:21,,,,Foul (1),4,396
+2025,404,0,435,OLY,P003941,FTM,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,32,08:21,57.0,49.0,,Free Throw In (1/1 -  3 pt),4,397
+2025,404,0,436,OLY,P008829,AS,"PETERS, ALEC",Olympiacos Piraeus,25,32,08:21,,,,Assist (1),4,398
+2025,404,0,437,OLY,P003941,FTM,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,32,08:21,58.0,49.0,,Free Throw In (2/2 -  4 pt),4,399
+2025,404,0,438,ULK,P009863,3FGA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,32,08:04,,,,Missed Three Pointer (0/2 -  6 pt),4,400
+2025,404,0,439,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,32,08:02,,,,Def Rebound (5),4,401
+2025,404,0,441,OLY,P012610,2FGA,"WARD, TYSON",Olympiacos Piraeus,3,33,07:43,,,,Missed Two Pointer (1/3 -  5 pt),4,402
+2025,404,0,442,OLY,P003941,O,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,33,07:44,,,,Off Rebound (2),4,403
+2025,404,0,443,OLY,P003941,RV,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,33,07:44,,,,Foul Drawn (2),4,404
+2025,404,0,444,ULK,P014124,CM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,33,07:44,,,,Foul (2),4,405
+2025,404,0,445,OLY,P013380,3FGM,"FOURNIER, EVAN",Olympiacos Piraeus,94,33,07:33,61.0,49.0,,Three Pointer (2/6 -  7 pt),4,406
+2025,404,0,446,ULK,,TOUT,,Fenerbahce Beko Istanbul,,33,07:31,,,,Time Out (1),4,407
+2025,404,0,447,ULK,P002100,IN,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,33,07:31,,,,In,4,408
+2025,404,0,448,ULK,P011205,OUT,"HALL, DEVON",Fenerbahce Beko Istanbul,20,33,07:31,,,,Out,4,409
+2025,404,0,449,ULK,P012613,3FGA,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,33,07:17,,,,Missed Three Pointer (0/3 -  0 pt),4,410
+2025,404,0,450,ULK,P006961,O,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,33,07:10,,,,Off Rebound (2),4,411
+2025,404,0,451,ULK,P012613,3FGA,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,33,07:05,,,,Missed Three Pointer (0/5 -  0 pt),4,412
+2025,404,0,535,ULK,P006961,O,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,33,07:05,,,,Off Rebound (3),4,413
+2025,404,0,536,ULK,P012613,3FGA,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,33,07:05,,,,Missed Three Pointer (0/5 -  0 pt),4,414
+2025,404,0,452,OLY,P013380,D,"FOURNIER, EVAN",Olympiacos Piraeus,94,33,07:02,,,,Def Rebound (3),4,415
+2025,404,0,454,OLY,P013380,2FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,34,06:46,,,,Missed Two Pointer (0/2 -  7 pt),4,416
+2025,404,0,455,OLY,P013380,AG,"FOURNIER, EVAN",Olympiacos Piraeus,94,34,06:46,,,,Shot Rejected (1),4,417
+2025,404,0,456,ULK,P012613,FV,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,34,06:44,,,,Block (1),4,418
+2025,404,0,457,ULK,P014124,D,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,34,06:45,,,,Def Rebound (5),4,419
+2025,404,0,458,OLY,P008829,CM,"PETERS, ALEC",Olympiacos Piraeus,25,34,06:45,,,,Foul (3),4,420
+2025,404,0,459,ULK,P014124,RV,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,34,06:45,,,,Foul Drawn (7),4,421
+2025,404,0,460,ULK,P002849,IN,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,34,06:45,,,,In,4,422
+2025,404,0,461,ULK,P012613,OUT,"JANTUNEN, MIKAEL",Fenerbahce Beko Istanbul,18,34,06:45,,,,Out,4,423
+2025,404,0,462,ULK,P014124,FTM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,34,06:45,61.0,50.0,,Free Throw In (5/6 -  14 pt),4,424
+2025,404,0,463,ULK,P014124,FTM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,34,06:45,61.0,51.0,,Free Throw In (6/7 -  15 pt),4,425
+2025,404,0,464,ULK,P014124,FTM,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,34,06:45,61.0,52.0,,Free Throw In (7/8 -  16 pt),4,426
+2025,404,0,465,ULK,P002100,OUT,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,34,06:45,,,,Out,4,427
+2025,404,0,466,ULK,P011205,IN,"HALL, DEVON",Fenerbahce Beko Istanbul,20,34,06:45,,,,In,4,428
+2025,404,0,467,OLY,P008829,2FGM,"PETERS, ALEC",Olympiacos Piraeus,25,34,06:29,63.0,52.0,,Two Pointer (4/4 -  11 pt),4,429
+2025,404,0,468,OLY,P012610,AS,"WARD, TYSON",Olympiacos Piraeus,3,34,06:27,,,,Assist (2),4,430
+2025,404,0,469,ULK,P014124,3FGA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,34,06:14,,,,Missed Three Pointer (1/6 -  16 pt),4,431
+2025,404,0,470,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,34,06:11,,,,Def Rebound (6),4,432
+2025,404,0,472,OLY,P008829,3FGM,"PETERS, ALEC",Olympiacos Piraeus,25,35,06:00,66.0,52.0,,Three Pointer (2/2 -  14 pt),4,433
+2025,404,0,473,OLY,P013380,AS,"FOURNIER, EVAN",Olympiacos Piraeus,94,35,05:57,,,,Assist (4),4,434
+2025,404,0,474,ULK,P006961,2FGA,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,35,05:33,,,,Missed Two Pointer (2/3 -  17 pt),4,435
+2025,404,0,475,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,35,05:31,,,,Def Rebound (7),4,436
+2025,404,0,476,OLY,P013380,2FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,35,05:13,,,,Missed Two Pointer (0/3 -  7 pt),4,437
+2025,404,0,477,ULK,P006961,D,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,35,05:11,,,,Def Rebound (3),4,438
+2025,404,0,478,ULK,P014124,3FGA,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,35,05:02,,,,Missed Three Pointer (1/7 -  16 pt),4,439
+2025,404,0,479,ULK,P011205,O,"HALL, DEVON",Fenerbahce Beko Istanbul,20,35,05:00,,,,Off Rebound (1),4,440
+2025,404,0,481,ULK,P006961,3FGA,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,36,04:57,,,,Missed Three Pointer (4/9 -  17 pt),4,441
+2025,404,0,482,OLY,P012610,D,"WARD, TYSON",Olympiacos Piraeus,3,36,04:54,,,,Def Rebound (1),4,442
+2025,404,0,483,ULK,P011205,CM,"HALL, DEVON",Fenerbahce Beko Istanbul,20,36,04:39,,,,Foul (2),4,443
+2025,404,0,484,OLY,P012610,RV,"WARD, TYSON",Olympiacos Piraeus,3,36,04:39,,,,Foul Drawn (1),4,444
+2025,404,0,485,OLY,P008855,IN,"WALKUP, THOMAS",Olympiacos Piraeus,0,36,04:39,,,,In,4,445
+2025,404,0,486,OLY,P014316,OUT,"JOSEPH, CORY",Olympiacos Piraeus,34,36,04:39,,,,Out,4,446
+2025,404,0,487,ULK,P006961,OUT,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,36,04:39,,,,Out,4,447
+2025,404,0,488,ULK,P009783,IN,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,36,04:39,,,,In,4,448
+2025,404,0,492,OLY,P012610,2FGM,"WARD, TYSON",Olympiacos Piraeus,3,36,04:39,68.0,52.0,,Two Pointer (2/4 -  7 pt),4,449
+2025,404,0,493,OLY,P008855,AS,"WALKUP, THOMAS",Olympiacos Piraeus,0,36,04:39,,,,Assist (4),4,450
+2025,404,0,489,ULK,P009863,CM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,36,04:32,,,,Foul (3),4,451
+2025,404,0,490,OLY,P012610,RV,"WARD, TYSON",Olympiacos Piraeus,3,36,04:32,,,,Foul Drawn (2),4,452
+2025,404,0,491,OLY,,CCH,,Olympiacos Piraeus,,36,04:32,,,,Coach Challenge (1),4,453
+2025,404,0,494,ULK,P002100,IN,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,36,04:32,,,,In,4,454
+2025,404,0,495,ULK,P011205,OUT,"HALL, DEVON",Fenerbahce Beko Istanbul,20,36,04:32,,,,Out,4,455
+2025,404,0,496,OLY,P012610,FTM,"WARD, TYSON",Olympiacos Piraeus,3,36,04:32,69.0,54.0,,Free Throw In (1/1 -  8 pt),4,456
+2025,404,0,538,ULK,P009863,2FGM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,36,04:32,69.0,54.0,,Two Pointer (4/7 -  8 pt),4,457
+2025,404,0,499,OLY,P012610,2FGM,"WARD, TYSON",Olympiacos Piraeus,3,37,03:52,71.0,54.0,,Two Pointer (3/5 -  10 pt),4,458
+2025,404,0,500,ULK,P009783,CM,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,37,03:52,,,,Foul (1),4,459
+2025,404,0,501,OLY,P012610,RV,"WARD, TYSON",Olympiacos Piraeus,3,37,03:52,,,,Foul Drawn (3),4,460
+2025,404,0,502,OLY,P012610,FTA,"WARD, TYSON",Olympiacos Piraeus,3,37,03:52,,,,Missed Free Throw (1/2 -  10 pt),4,461
+2025,404,0,503,ULK,P009783,D,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,37,03:52,,,,Def Rebound (1),4,462
+2025,404,0,504,ULK,P009783,3FGA,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,37,03:44,,,,Missed Three Pointer (0/1 -  0 pt),4,463
+2025,404,0,505,OLY,P008829,D,"PETERS, ALEC",Olympiacos Piraeus,25,37,03:42,,,,Def Rebound (1),4,464
+2025,404,0,506,OLY,P012610,OF,"WARD, TYSON",Olympiacos Piraeus,3,37,03:36,,,,Offensive Foul (4),4,465
+2025,404,0,507,OLY,P012610,TO,"WARD, TYSON",Olympiacos Piraeus,3,37,03:36,,,,Turnover (1),4,466
+2025,404,0,508,ULK,P002100,RV,"DE COLO, NANDO",Fenerbahce Beko Istanbul,12,37,03:36,,,,Foul Drawn (3),4,467
+2025,404,0,509,ULK,P006961,IN,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,37,03:36,,,,In,4,468
+2025,404,0,510,ULK,P009783,OUT,"COLSON, BONZIE",Fenerbahce Beko Istanbul,50,37,03:36,,,,Out,4,469
+2025,404,0,511,ULK,P002849,3FGA,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,37,03:26,,,,Missed Three Pointer (0/3 -  2 pt),4,470
+2025,404,0,512,OLY,P008829,D,"PETERS, ALEC",Olympiacos Piraeus,25,37,03:23,,,,Def Rebound (2),4,471
+2025,404,0,513,OLY,P013380,3FGA,"FOURNIER, EVAN",Olympiacos Piraeus,94,37,03:00,,,,Missed Three Pointer (2/7 -  7 pt),4,472
+2025,404,0,515,OLY,P012610,O,"WARD, TYSON",Olympiacos Piraeus,3,38,02:58,,,,Off Rebound (2),4,473
+2025,404,0,516,OLY,P012610,2FGA,"WARD, TYSON",Olympiacos Piraeus,3,38,02:56,,,,Missed Two Pointer (3/6 -  10 pt),4,474
+2025,404,0,517,ULK,P014124,D,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,38,02:54,,,,Def Rebound (6),4,475
+2025,404,0,518,OLY,P008829,CM,"PETERS, ALEC",Olympiacos Piraeus,25,38,02:50,,,,Foul (4),4,476
+2025,404,0,519,ULK,P009863,RV,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,38,02:50,,,,Foul Drawn (3),4,477
+2025,404,0,520,ULK,P009863,FTM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,38,02:50,71.0,55.0,,Free Throw In (1/1 -  9 pt),4,478
+2025,404,0,521,ULK,P014124,AS,"HORTON TUCKER, TALEN",Fenerbahce Beko Istanbul,8,38,02:50,,,,Assist (3),4,479
+2025,404,0,522,ULK,P009863,FTA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,38,02:50,,,,Missed Free Throw (1/2 -  9 pt),4,480
+2025,404,0,523,OLY,P013380,D,"FOURNIER, EVAN",Olympiacos Piraeus,94,38,02:50,,,,Def Rebound (4),4,481
+2025,404,0,524,OLY,P012610,TO,"WARD, TYSON",Olympiacos Piraeus,3,38,02:29,,,,Turnover (2),4,482
+2025,404,0,525,OLY,P012610,OUT,"WARD, TYSON",Olympiacos Piraeus,3,38,02:30,,,,Out,4,483
+2025,404,0,526,OLY,P009849,IN,"DORSEY, TYLER",Olympiacos Piraeus,22,38,02:30,,,,In,4,484
+2025,404,0,527,OLY,P008855,CM,"WALKUP, THOMAS",Olympiacos Piraeus,0,38,02:22,,,,Foul (3),4,485
+2025,404,0,528,ULK,P009863,RV,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,38,02:22,,,,Foul Drawn (4),4,486
+2025,404,0,529,ULK,P009863,FTM,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,38,02:22,71.0,56.0,,Free Throw In (2/3 -  10 pt),4,487
+2025,404,0,530,ULK,P009863,FTA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,38,02:22,,,,Missed Free Throw (2/4 -  10 pt),4,488
+2025,404,0,531,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,38,02:22,,,,Def Rebound (8),4,489
+2025,404,0,532,OLY,P008829,3FGM,"PETERS, ALEC",Olympiacos Piraeus,25,38,02:00,74.0,56.0,,Three Pointer (3/3 -  17 pt),4,490
+2025,404,0,534,OLY,P008855,AS,"WALKUP, THOMAS",Olympiacos Piraeus,0,39,01:59,,,,Assist (5),4,491
+2025,404,0,539,ULK,P002849,3FGA,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,39,01:44,,,,Missed Three Pointer (0/4 -  2 pt),4,492
+2025,404,0,540,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,39,01:42,,,,Def Rebound (9),4,493
+2025,404,0,541,OLY,P008855,TO,"WALKUP, THOMAS",Olympiacos Piraeus,0,39,01:22,,,,Turnover (2),4,494
+2025,404,0,542,ULK,P006961,ST,"BIBEROVIC, TARIK",Fenerbahce Beko Istanbul,13,39,01:21,,,,Steal (2),4,495
+2025,404,0,543,ULK,P002849,2FGM,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,39,01:15,74.0,58.0,,Two Pointer (2/3 -  4 pt),4,496
+2025,404,0,544,ULK,P009863,AS,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,39,01:15,,,,Assist (5),4,497
+2025,404,0,546,OLY,P009849,2FGA,"DORSEY, TYLER",Olympiacos Piraeus,22,40,00:49,,,,Missed Two Pointer (2/5 -  15 pt),4,498
+2025,404,0,547,OLY,P003941,O,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,40,00:48,,,,Off Rebound (3),4,499
+2025,404,0,548,OLY,P003941,2FGM,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,40,00:48,76.0,58.0,,Two Pointer (2/4 -  6 pt),4,500
+2025,404,0,549,ULK,P002849,3FGM,"MELLI, NICOLO",Fenerbahce Beko Istanbul,4,40,00:39,76.0,61.0,,Three Pointer (1/5 -  7 pt),4,501
+2025,404,0,550,ULK,P009863,AS,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,40,00:39,,,,Assist (6),4,502
+2025,404,0,551,OLY,P013380,3FGM,"FOURNIER, EVAN",Olympiacos Piraeus,94,40,00:18,79.0,61.0,,Three Pointer (3/8 -  10 pt),4,503
+2025,404,0,552,OLY,P009849,AS,"DORSEY, TYLER",Olympiacos Piraeus,22,40,00:18,,,,Assist (1),4,504
+2025,404,0,553,ULK,P009863,3FGA,"BALDWIN IV, WADE",Fenerbahce Beko Istanbul,2,40,00:10,,,,Missed Three Pointer (0/3 -  10 pt),4,505
+2025,404,0,554,OLY,P003941,D,"MILUTINOV, NIKOLA",Olympiacos Piraeus,33,40,00:08,,,,Def Rebound (10),4,506
+2025,404,0,557,,,EG,,,,41,,,,,End Game,4,507
