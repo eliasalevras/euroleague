@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EuroLeague Final Four 2026</title>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <style>
+    :root {
+      --bg: #070a12;
+      --panel: #101522;
+      --panel2: #151b2b;
+      --line: rgba(255,255,255,.11);
+      --text: #f7f8fb;
+      --muted: #aab2c5;
+      --red: #e30613;
+      --gold: #f5c451;
+      --shadow: 0 22px 60px rgba(0,0,0,.35);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(circle at top left, rgba(227,6,19,.22), transparent 34%),
+    radial-gradient(circle at top right, rgba(245,196,81,.12), transparent 28%),
+    var(--bg);
+
+  color: var(--text);
+  font-family: Inter, Arial, sans-serif;
+}
+.wrap {
+  width: calc(100% - 30px);
+  max-width: none;
+  margin: 0 auto;
+}
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0));
+    }
+
+    .header-inner {
+      min-height: 180px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 28px;
+      padding: 34px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 10px 0 0;
+      font-size: clamp(38px, 7vw, 86px);
+      line-height: .92;
+      letter-spacing: -3px;
+    }
+
+    .euroleague-logo {
+  width: 170px;
+  height: 170px;
+  border-radius: 34px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.euroleague-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* .euroleague-logo::before {
+    content: "";
+    width: 92px;
+      height: 92px;
+      border: 13px solid white;
+      border-right-color: transparent;
+      border-bottom-color: rgba(255,255,255,.55);
+      border-radius: 50%;
+      transform: rotate(-28deg);
+    } */
+
+    .euroleague-logo span {
+      position: absolute;
+      bottom: 22px;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: .12em;
+    }
+    html {
+      zoom: 0.65;
+    }
+    .panel {
+  overflow: visible;
+}
+
+#chartHost {
+  overflow: visible !important;
+}
+
+#chartHost svg {
+  overflow: visible !important;
+}
+
+#chartHost text {
+  font-size: 16px !important;
+}
+    main {
+
+      padding: 30px 0 52px;
+    }
+
+    .match-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-bottom: 26px;
+    }
+
+    .match-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.035));
+      box-shadow: var(--shadow);
+      padding: 26px;
+      cursor: pointer;
+      transition: .22s ease;
+      min-height: 190px;
+    }
+
+    .match-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(245,196,81,.55);
+    }
+
+    .match-card.active {
+      background:
+        linear-gradient(145deg, rgba(227,6,19,.28), rgba(245,196,81,.10)),
+        var(--panel);
+      border-color: var(--red);
+    }
+
+    .match-label {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .teams {
+      margin-top: 22px;
+      font-size: clamp(28px, 4vw, 52px);
+      font-weight: 950;
+      line-height: 1;
+      letter-spacing: -1.8px;
+    }
+
+    .match-meta {
+      margin-top: 16px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.visible {
+      display: block;
+    }
+
+    .panel {
+      background: rgba(16,21,34,.86);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+#actionPointsChart {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+}
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 18px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.panel.collapsed .table-wrap,
+.panel.collapsed #chartHost,
+.panel.collapsed .shot-chart-wrap,
+.panel.collapsed #actionPointsChart 
+{
+  display: none;
+}
+
+.panel.collapsed {
+  padding-bottom: 10px;
+}
+
+    h2 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -.7px;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .score-strip {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 22px;
+      padding: 20px;
+      border-radius: 20px;
+      background: var(--panel2);
+      border: 1px solid var(--line);
+      margin-bottom: 20px;
+    }
+
+    .team-name {
+      font-size: clamp(22px, 3vw, 42px);
+      font-weight: 950;
+      letter-spacing: -1px;
+    }
+
+    .team-name.right { text-align: right; }
+
+    .score {
+      font-size: clamp(34px, 6vw, 76px);
+      font-weight: 950;
+      letter-spacing: -2px;
+      color: var(--gold);
+      white-space: nowrap;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th, td {
+      padding: 13px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    th {
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    td:first-child, th:first-child {
+      text-align: left;
+      font-weight: 850;
+    }
+
+    tr:hover td {
+      background: rgba(255,255,255,.035);
+    }
+
+
+    .boxscore-team-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+
+    .team-filter-btn {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.08);
+      color: white;
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: .18s ease;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+
+    .team-filter-btn:hover {
+      border-color: rgba(245,196,81,.55);
+      transform: translateY(-1px);
+    }
+
+    .team-filter-btn.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: white;
+      box-shadow: 0 10px 28px rgba(227,6,19,.28);
+    }
+
+
+    .player-shot-link {
+      color: white;
+      font-weight: 950;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: rgba(245,196,81,.65);
+      text-underline-offset: 4px;
+    }
+
+    .player-shot-link:hover {
+      color: var(--gold);
+    }
+
+    #shootingChartPanel {
+      display: none;
+    }
+
+    #shootingChartPanel.visible {
+      display: block;
+    }
+
+    .shot-chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .shot-summary {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    .shot-chart-wrap {
+      width: 100%;
+      min-height: 640px;
+      display: grid;
+      place-items: center;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .close-shot-chart {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.08);
+      color: white;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .close-shot-chart:hover {
+      border-color: var(--red);
+    }
+
+    .made-shot {
+      fill: #20c997;
+      stroke: white;
+      stroke-width: 1.5;
+    }
+
+    .missed-shot {
+      stroke: #ff4d4f;
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+
+    .court-line {
+      fill: none;
+      stroke: rgba(255,255,255,.75);
+      stroke-width: 2;
+    }
+
+    .court-fill {
+      fill: none;
+      stroke: rgba(255,255,255,.75);
+      stroke-width: 2;
+    }
+
+    .controls {
+      display: none;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    select, input[type="file"]::file-selector-button {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.08);
+      color: white;
+      border-radius: 999px;
+      padding: 11px 15px;
+      font-weight: 800;
+    }
+
+    select option {
+      color: black;
+    }
+
+    input[type="file"] {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    #chartHost {
+      min-height: 780px;
+      display: grid;
+      place-items: center;
+      overflow-x: auto;
+    }
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #tooltip {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 20;
+      background: rgba(10,14,24,.96);
+      color: white;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 14px;
+      padding: 10px 12px;
+      font-size: 13px;
+      box-shadow: var(--shadow);
+    }
+
+    .empty {
+      padding: 34px;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed rgba(255,255,255,.22);
+      border-radius: 18px;
+      background: rgba(255,255,255,.035);
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 0 0 34px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner { grid-template-columns: 1fr; }
+      .euroleague-logo { width: 120px; height: 120px; }
+      .match-grid { grid-template-columns: 1fr; }
+      .score-strip { grid-template-columns: 1fr; text-align: center; }
+      .team-name.right { text-align: center; }
+    }
+
+
+  
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap header-inner">
+      <div>
+        <div class="eyebrow">EuroLeague Basketball Analytics</div>
+        <h1>EUROLEAGUE<br>FINAL FOUR 2026</h1>
+      </div>
+
+        <div class="euroleague-logo">
+            <img src="euroleague_logo.png" alt="EuroLeague Logo">
+        </div>
+  </header>
+
+  <main class="wrap">
+    <section class="match-grid">
+      <article class="match-card active" data-game="sf1">
+        <div class="match-label">First Semifinal</div>
+        <div class="teams">Olympiacos Pireaus<br>— Fenerbahce Beko Istanbul</div>
+        <div class="match-meta">Game 1 · Semifinal</div>
+      </article>
+
+      <article class="match-card" data-game="sf2">
+        <div class="match-label">Second Semifinal</div>
+        <div class="teams">Valencia Basket<br>— Real Madrid</div>
+        <div class="match-meta">Game 2 · Semifinal</div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2 id="selectedGameTitle">Olympiacos - Fenerbahce</h2>
+        </div>
+
+        <div class="controls">
+
+          <input id="quarterUpload" type="file" accept=".csv,.json" title="Quarter boxscore CSV/JSON">
+          <input id="boxscoreUpload" type="file" accept=".csv,.json" title="Player boxscore CSV/JSON">
+          <input id="assistUpload" type="file" accept=".csv" title="Assist network CSV">
+        </div>
+      </div>
+
+      <div class="score-strip">
+        <div class="team-name" id="homeTeam">Olympiacos</div>
+        <div class="score" id="scoreText">— : —</div>
+        <div class="team-name right" id="awayTeam">Fenerbahce </div>
+      </div>
+    </section>
+
+    <section class="section visible" id="dashboard">
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Points Per Quarter</h2>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="quarterTable"></table>
+        </div>
+      </section>
+
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Team Stats</h2>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="teamStatsTable"></table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Players Boxscore</h2>
+          </div>
+
+          <div id="boxscoreTeamButtons" class="boxscore-team-buttons"></div>
+        </div>
+        <div class="table-wrap">
+          <table id="boxscoreTable"></table>
+        </div>
+      </section>
+      <section class="panel" id="actionPointsPanel">
+  <div class="panel-head">
+    <div>
+      <h2 id="actionPointsTitle">Action Points</h2>
+    </div>
+  </div>
+  <div id="actionPointsChart"></div>
+</section>
+
+      <section class="panel" id="shootingChartPanel">
+        <div class="shot-chart-header">
+          <div>
+            <h2 id="shotChartTitle">Player Shooting Chart</h2>
+            <div class="shot-summary" id="shotChartSummary"></div>
+          </div>
+          <button type="button" class="close-shot-chart" id="closeShotChart">Close</button>
+        </div>
+        <div class="shot-chart-wrap">
+          <div id="shotChartHost"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2 id="chordTitle"> Team Chord Diagram</h2>
+          </div>
+        </div>
+        <div id="chartHost"></div>
+      </section>
+    </section>
+  </main>
+
+  <div id="tooltip"></div>
+
+  <footer class="wrap">
+    EuroLeague Final Four 2026 ·
+  <a href="https://alevraselias-portfolio.vercel.app/"
+     target="_blank"
+     style="color:#f5c451; text-decoration:none; font-weight:700;">
+     Elias Alevras
+  </a>
+  </footer>
+
+<script>
+const GAME_CONFIG = {
+sf1: {
+  title: "Olympiacos - Fenerbahce",
+  home: "OLYMPIACOS PIRAEUS",
+  away: "FENERBAHCE BEKO ISTANBUL",
+  homeDisplay: "Olympiacos",
+  awayDisplay: "Fenerbahce",
+  dataPrefix: "sf1",
+  defaultTeam: "OLY"
+},
+  sf2: {
+    title: "Valencia - Real Madrid",
+    home: "VALENCIA BASKET",
+    away: "REAL MADRID",
+    homeDisplay: "Valencia",
+    awayDisplay: "Real Madrid",
+    dataPrefix: "sf2",
+    defaultTeam: "VAL"
+  }
+};
+
+let selectedGame = "sf1";
+let quarterRows = [];
+let boxscoreRows = [];
+let teamStatsRows = [];
+let assistRows = [];
+let shotRows = [];
+let selectedBoxscoreTeam = "";
+
+const els = {
+  cards: document.querySelectorAll(".match-card"),
+  selectedGameTitle: document.getElementById("selectedGameTitle"),
+  homeTeam: document.getElementById("homeTeam"),
+  awayTeam: document.getElementById("awayTeam"),
+  scoreText: document.getElementById("scoreText"),
+  boxscoreTeamButtons: document.getElementById("boxscoreTeamButtons"),
+  quarterTable: document.getElementById("quarterTable"),
+  boxscoreTable: document.getElementById("boxscoreTable"),
+  teamStatsTable: document.getElementById("teamStatsTable"),
+  chartHost: document.getElementById("chartHost"),
+  tooltip: d3.select("#tooltip"),
+  chordTitle: document.getElementById("chordTitle"),
+  quarterUpload: document.getElementById("quarterUpload"),
+  boxscoreUpload: document.getElementById("boxscoreUpload"),
+  assistUpload: document.getElementById("assistUpload"),
+  shootingChartPanel: document.getElementById("shootingChartPanel"),
+  shotChartHost: document.getElementById("shotChartHost"),
+  shotChartTitle: document.getElementById("shotChartTitle"),
+  shotChartSummary: document.getElementById("shotChartSummary"),
+  closeShotChart: document.getElementById("closeShotChart")
+};
+
+function setGame(gameKey) {
+  selectedGame = gameKey;
+  const cfg = GAME_CONFIG[gameKey];
+
+  els.cards.forEach(card => card.classList.toggle("active", card.dataset.game === gameKey));
+  els.selectedGameTitle.textContent = cfg.title;
+  els.homeTeam.textContent = cfg.homeDisplay || cfg.home;
+  els.awayTeam.textContent = cfg.awayDisplay || cfg.away;
+
+  quarterRows = [];
+  boxscoreRows = [];
+  teamStatsRows = [];
+  assistRows = [];
+  shotRows = [];
+  shotRows = [];
+  selectedBoxscoreTeam = "";
+
+  renderAll();
+  autoLoadGameFiles();
+}
+
+els.cards.forEach(card => card.addEventListener("click", () => setGame(card.dataset.game)));
+
+function renderAll() {
+  renderQuarterTable();
+  renderTeamStatsTable();
+  populateTeamButtons();
+  renderBoxscoreTable();
+  renderChord();
+  updateScoreFromQuarterRows();
+  renderActionPointsChart();
+}
+function updateScoreFromQuarterRows() {
+  if (!quarterRows.length) {
+    els.scoreText.textContent = "— : —";
+    return;
+  }
+
+  const cfg = GAME_CONFIG[selectedGame];
+
+  let homeRow = quarterRows.find(r =>
+    normalize(r.Team || r.TEAM || r.team) === normalize(cfg.home)
+  );
+
+  let awayRow = quarterRows.find(r =>
+    normalize(r.Team || r.TEAM || r.team) === normalize(cfg.away)
+  );
+
+  // Fallback: if team names do not match exactly, use file row order.
+  // The quarter CSV normally has 2 rows: home team first, away team second.
+  if (!homeRow && quarterRows.length >= 1) homeRow = quarterRows[0];
+  if (!awayRow && quarterRows.length >= 2) awayRow = quarterRows[1];
+
+  function total(row) {
+    if (!row) return null;
+
+    const totalValue =
+      row.Total ?? row.TOTAL ?? row.PTS ?? row.Points ?? row.POINTS ?? null;
+
+    if (totalValue !== null && totalValue !== undefined && totalValue !== "") {
+      return num(totalValue);
+    }
+
+    return (
+      num(row.Quarter1 || row.QUARTER1 || row.Q1) +
+      num(row.Quarter2 || row.QUARTER2 || row.Q2) +
+      num(row.Quarter3 || row.QUARTER3 || row.Q3) +
+      num(row.Quarter4 || row.QUARTER4 || row.Q4)
+    );
+  }
+
+  const homeTotal = total(homeRow);
+  const awayTotal = total(awayRow);
+
+  if (homeTotal !== null && awayTotal !== null) {
+    els.scoreText.textContent = `${homeTotal} : ${awayTotal}`;
+  } else {
+    els.scoreText.textContent = "— : —";
+  }
+}
+
+function renderQuarterTable() {
+  if (!quarterRows.length) {
+    renderEmpty(els.quarterTable, "Δεν έχουν φορτωθεί quarter data ακόμα.");
+    return;
+  }
+  renderTable(els.quarterTable, quarterRows);
+}
+
+
+function renderTeamStatsTable() {
+  if (!teamStatsRows.length) {
+    renderEmpty(els.teamStatsTable, "Δεν έχει φορτωθεί team stats ακόμα.");
+    return;
+  }
+
+  const rows = teamStatsRows.map(r => {
+    const team = r.Team || r.TEAM || r.CODETEAM || r.TeamCode || "";
+    const made2 = r["2FG_M"] ?? r.FieldGoalsMade2 ?? r.FGM2 ?? r.TwoPointsMade ?? "";
+    const att2 = r["2FG_A"] ?? r.FieldGoalsAttempted2 ?? r.FGA2 ?? r.TwoPointsAttempted ?? "";
+    const made3 = r["3FG_M"] ?? r.FieldGoalsMade3 ?? r.FGM3 ?? r.ThreePointsMade ?? "";
+    const att3 = r["3FG_A"] ?? r.FieldGoalsAttempted3 ?? r.FGA3 ?? r.ThreePointsAttempted ?? "";
+    const ftm = r["FT_M"] ?? r.FreeThrowsMade ?? r.FTM ?? "";
+    const fta = r["FT_A"] ?? r.FreeThrowsAttempted ?? r.FTA ?? "";
+
+    return {
+      Team: team,
+      PTS: r.PTS || r.Points || r.POINTS || "",
+      "2FG": made2 !== "" || att2 !== "" ? `${made2}/${att2}` : "",
+      "2FG%": pct(made2, att2),
+      "3FG": made3 !== "" || att3 !== "" ? `${made3}/${att3}` : "",
+      "3FG%": pct(made3, att3),
+      FT: ftm !== "" || fta !== "" ? `${ftm}/${fta}` : "",
+      "FT%": pct(ftm, fta),
+      OREB: r.OREB || r.OffensiveRebounds || "",
+      DREB: r.DREB || r.DefensiveRebounds || "",
+      REB: r.REB || r.TotalRebounds || "",
+      AST: r.AST || r.Assistances || "",
+      STL: r.STL || r.Steals || "",
+      TO: r.TO || r.Turnovers || "",
+      BLK: r.BLK || r.BlocksFavour || "",
+      FC: r.FC || r.FOULS_C || r.FoulsCommited || "",
+      FR: r.FR || r.FOULS_R || r.FoulsReceived || "",
+      PIR: r.PIR || r.Valuation || ""
+    };
+  });
+
+  const columns = Object.keys(rows[0] || {});
+
+  els.teamStatsTable.innerHTML = `
+    <thead>
+      <tr>${columns.map(c => `<th>${escapeHtml(c)}</th>`).join("")}</tr>
+    </thead>
+    <tbody>
+      ${rows.map(row => `
+        <tr>
+          ${columns.map(c => {
+            if (c === "Team") {
+              return `<td>
+                <span class="player-shot-link team-shot-link" data-team="${escapeHtml(row[c])}">
+                  ${escapeHtml(row[c])}
+                </span>
+              </td>`;
+            }
+            return `<td>${escapeHtml(row[c])}</td>`;
+          }).join("")}
+        </tr>
+      `).join("")}
+    </tbody>
+  `;
+
+  els.teamStatsTable.querySelectorAll(".team-shot-link").forEach(el => {
+    el.addEventListener("click", () => {
+      showTeamShotChart(el.dataset.team);
+    });
+  });
+}
+
+function pct(made, attempted) {
+  const m = num(made);
+  const a = num(attempted);
+  if (!a) return "";
+  return ((m / a) * 100).toFixed(1) + "%";
+}
+
+
+function renderBoxscoreTable() {
+  if (!boxscoreRows.length) {
+    renderEmpty(els.boxscoreTable, "Δεν έχει φορτωθεί player boxscore ακόμα.");
+    return;
+  }
+
+  const filteredRows = boxscoreRows.filter(r =>
+    String(r.Team || r.TEAM || r.TEAM_CODE || r.CODETEAM || r.TeamCode || "").trim() === selectedBoxscoreTeam
+  );
+
+  if (!filteredRows.length) {
+    renderEmpty(els.boxscoreTable, "Δεν υπάρχουν παίκτες για την επιλεγμένη ομάδα.");
+    return;
+  }
+
+  els.boxscoreTable.innerHTML = `
+    <thead>
+      <tr>
+        <th rowspan="2">Player</th>
+        <th rowspan="2">Min</th>
+        <th rowspan="2">PTS</th>
+        <th colspan="2">2FG</th>
+        <th colspan="2">3FG</th>
+        <th colspan="2">FT</th>
+        <th colspan="3">Rebounds</th>
+        <th rowspan="2">AST</th>
+        <th rowspan="2">STL</th>
+        <th rowspan="2">TO</th>
+        <th colspan="2">Blocks</th>
+        <th colspan="2">Fouls</th>
+        <th rowspan="2">PIR</th>
+        <th rowspan="2">+/-</th>
+      </tr>
+      <tr>
+        <th>M/A</th><th>%</th>
+        <th>M/A</th><th>%</th>
+        <th>M/A</th><th>%</th>
+        <th>O</th><th>D</th><th>T</th>
+        <th>F</th><th>A</th>
+        <th>C</th><th>D</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${filteredRows.map(r => `
+        <tr>
+          <td>
+            <span class="player-shot-link" data-player="${escapeHtml(r.Player)}">
+              ${escapeHtml(r.Player)}
+            </span>
+          </td>
+          <td>${escapeHtml(r.Min)}</td>
+          <td>${escapeHtml(r.PTS)}</td>
+          <td>${escapeHtml(r["2FG_M"])}/${escapeHtml(r["2FG_A"])}</td>
+          <td>${escapeHtml(r["2FG_%"])}%</td>
+          <td>${escapeHtml(r["3FG_M"])}/${escapeHtml(r["3FG_A"])}</td>
+          <td>${escapeHtml(r["3FG_%"])}%</td>
+          <td>${escapeHtml(r["FT_M"])}/${escapeHtml(r["FT_A"])}</td>
+          <td>${escapeHtml(r["FT_%"])}%</td>
+          <td>${escapeHtml(r.OREB)}</td>
+          <td>${escapeHtml(r.DREB)}</td>
+          <td>${escapeHtml(r.REB)}</td>
+          <td>${escapeHtml(r.AST)}</td>
+          <td>${escapeHtml(r.STL)}</td>
+          <td>${escapeHtml(r.TO)}</td>
+          <td>${escapeHtml(r.BLK_F)}</td>
+          <td>${escapeHtml(r.BLK_A)}</td>
+          <td>${escapeHtml(r.FOULS_C)}</td>
+          <td>${escapeHtml(r.FOULS_R)}</td>
+          <td>${escapeHtml(r.PIR)}</td>
+          <td>${escapeHtml(r["+/-"])}</td>
+        </tr>
+      `).join("")}
+    </tbody>
+  `;
+
+  els.boxscoreTable.querySelectorAll(".player-shot-link").forEach(el => {
+    el.addEventListener("click", () => {
+      showPlayerShotChart(el.dataset.player);
+    });
+  });
+}
+
+function populateTeamButtons() {
+  const teams = Array.from(new Map(
+    boxscoreRows.map(r => [
+      String(r.TEAM_CODE || r.TeamCode || r.CODETEAM || r.TEAM || r.Team || "").trim(),
+      String(r.TEAM || r.Team || r.TEAM_CODE || r.TeamCode || r.CODETEAM || "").trim()
+    ]).filter(([code]) => code)
+  ));
+
+  if (!teams.length) {
+    els.boxscoreTeamButtons.innerHTML = "";
+    selectedBoxscoreTeam = "";
+    return;
+  }
+
+  if (!selectedBoxscoreTeam || !teams.some(([code]) => code === selectedBoxscoreTeam)) {
+    selectedBoxscoreTeam = teams[0][0];
+  }
+
+  els.boxscoreTeamButtons.innerHTML = teams.map(([code, name]) => `
+    <button
+      type="button"
+      class="team-filter-btn ${code === selectedBoxscoreTeam ? "active" : ""}"
+      data-team="${escapeHtml(code)}"
+    >
+      ${escapeHtml(name || code)}
+    </button>
+  `).join("");
+
+  els.boxscoreTeamButtons.querySelectorAll(".team-filter-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      selectedBoxscoreTeam = button.dataset.team;
+      populateTeamButtons();
+      renderBoxscoreTable();
+      renderChord();
+      renderActionPointsChart();
+
+    });
+  });
+}
+
+
+function showTeamShotChart(teamName) {
+  if (!shotRows.length) {
+    els.shootingChartPanel.classList.add("visible");
+    els.shotChartHost.innerHTML = `<div class="empty">Δεν έχει φορτωθεί shot chart CSV για αυτό το παιχνίδι.</div>`;
+    els.shotChartTitle.textContent = `Team Shooting Chart · ${teamName}`;
+    els.shotChartSummary.textContent = "Βάλε το σωστό Shot CSV στο data folder.";
+    return;
+  }
+
+  const target = normalize(teamName);
+
+  let teamShots = shotRows.filter(r =>
+    normalize(r.TEAM || r.Team || r.CODETEAM || r.TeamCode || r.CODETEAM_NAME || "") === target
+  );
+
+  // Fallback for common team codes/names
+  if (!teamShots.length) {
+    const codeMap = {
+      "olympiacos piraeus": "OLY",
+      "olympiacos": "OLY",
+      "fenerbahce beko istanbul": "ULK",
+      "fenerbahce": "ULK",
+      "valencia basket": "VBC",
+      "valencia": "VBC",
+      "real madrid": "RMB"
+    };
+
+    const code = codeMap[target];
+
+    if (code) {
+      teamShots = shotRows.filter(r =>
+        String(r.CODETEAM || r.TEAM_CODE || r.TeamCode || "").trim() === code
+      );
+    }
+  }
+
+  els.shootingChartPanel.classList.add("visible");
+  els.shotChartTitle.textContent = `Team Shooting Chart · ${teamName}`;
+
+  if (!teamShots.length) {
+    els.shotChartHost.innerHTML = `<div class="empty">No team shooting chart for ${escapeHtml(teamName)}.</div>`;
+    els.shotChartSummary.textContent = "";
+    els.shootingChartPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+
+  const made = teamShots.filter(isMadeShot);
+  const missed = teamShots.filter(isMissedShot);
+  const total = made.length + missed.length;
+  const pctValue = total ? ((made.length / total) * 100).toFixed(1) : "0.0";
+
+  els.shotChartSummary.textContent = `${made.length}/${total} FG · ${pctValue}%`;
+
+  drawShotChart(teamShots, teamName);
+  els.shootingChartPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+
+function showPlayerShotChart(playerName) {
+  if (!shotRows.length) {
+    els.shootingChartPanel.classList.add("visible");
+    els.shotChartHost.innerHTML = `<div class="empty">Δεν έχει φορτωθεί shot chart CSV για αυτό το παιχνίδι.</div>`;
+    els.shotChartTitle.textContent = `Shooting Chart · ${playerName}`;
+    els.shotChartSummary.textContent = "Βάλε το αρχείο shots στο data folder.";
+    return;
+  }
+
+  const target = normalizePlayerName(playerName);
+
+  const playerShots = shotRows.filter(r => {
+    const rowPlayer = normalizePlayerName(
+      r.PLAYER || r.Player || r.player || r.PLAYER_NAME || r.PlayerName || ""
+    );
+    return rowPlayer === target;
+  });
+
+  els.shootingChartPanel.classList.add("visible");
+  els.shotChartTitle.textContent = `Shooting Chart · ${playerName}`;
+
+  if (!playerShots.length) {
+    els.shotChartHost.innerHTML = `<div class="empty">Νo Shooting Chart for ${escapeHtml(playerName)}.</div>`;
+    els.shotChartSummary.textContent = "";
+    els.shootingChartPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+
+  const made = playerShots.filter(isMadeShot);
+  const missed = playerShots.filter(isMissedShot);
+  const total = made.length + missed.length;
+  const pct = total ? ((made.length / total) * 100).toFixed(1) : "0.0";
+
+  els.shotChartSummary.textContent = `${made.length}/${total} FG · ${pct}%`;
+
+  drawShotChart(playerShots, playerName);
+  els.shootingChartPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function drawShotChart(shots, playerName) {
+  els.shotChartHost.innerHTML = "";
+
+  const width = 760;
+  const height = 720;
+
+  const xScale = d3.scaleLinear().domain([-800, 800]).range([40, width - 40]);
+  const yScale = d3.scaleLinear().domain([-200, 1300]).range([height - 40, 40]);
+
+  const svg = d3.select(els.shotChartHost)
+    .append("svg")
+    .attr("viewBox", [0, 0, width, height])
+    .attr("width", width)
+    .attr("height", height);
+
+  drawCourtSvg(svg, xScale, yScale);
+
+  svg.append("g")
+    .selectAll("circle")
+    .data(shots.filter(isMadeShot))
+    .join("circle")
+    .attr("class", "made-shot")
+    .attr("cx", d => xScale(num(d.COORD_X || d.CoordX || d.coord_x || d.X)))
+    .attr("cy", d => yScale(num(d.COORD_Y || d.CoordY || d.coord_y || d.Y)))
+    .attr("r", 7)
+    .append("title")
+    .text(d => `${playerName} · Made`);
+
+  const miss = svg.append("g")
+    .selectAll("g")
+    .data(shots.filter(isMissedShot))
+    .join("g")
+    .attr("transform", d => `translate(${xScale(num(d.COORD_X || d.CoordX || d.coord_x || d.X))},${yScale(num(d.COORD_Y || d.CoordY || d.coord_y || d.Y))})`);
+
+  miss.append("line").attr("class", "missed-shot").attr("x1", -7).attr("y1", -7).attr("x2", 7).attr("y2", 7);
+  miss.append("line").attr("class", "missed-shot").attr("x1", -7).attr("y1", 7).attr("x2", 7).attr("y2", -7);
+  miss.append("title").text(`${playerName} · Missed`);
+
+  const legend = svg.append("g").attr("transform", "translate(48, 36)");
+  legend.append("circle").attr("class", "made-shot").attr("cx", 0).attr("cy", 0).attr("r", 7);
+  legend.append("text").attr("x", 16).attr("y", 5).attr("fill", "white").attr("font-weight", 800).text("Made");
+  legend.append("line").attr("class", "missed-shot").attr("x1", 92).attr("y1", -7).attr("x2", 106).attr("y2", 7);
+  legend.append("line").attr("class", "missed-shot").attr("x1", 92).attr("y1", 7).attr("x2", 106).attr("y2", -7);
+  legend.append("text").attr("x", 114).attr("y", 5).attr("fill", "white").attr("font-weight", 800).text("Missed");
+}
+
+function drawCourtSvg(svg, xScale, yScale) {
+  const line = d3.line()
+    .x(d => xScale(d[0]))
+    .y(d => yScale(d[1]));
+
+  const arcPath = (cx, cy, rx, ry, startDeg, endDeg) => {
+    const points = [];
+    for (let a = startDeg; a <= endDeg; a += 2) {
+      const rad = a * Math.PI / 180;
+      points.push([cx + rx * Math.cos(rad), cy + ry * Math.sin(rad)]);
+    }
+    return line(points);
+  };
+// OUTER COURT
+svg.append("rect")
+  .attr("class", "court-line")
+  .attr("x", xScale(-750))
+  .attr("y", yScale(1242.5))
+  .attr("width", xScale(750) - xScale(-750))
+  .attr("height", yScale(-157.5) - yScale(1242.5));
+
+// HOOP
+svg.append("circle")
+  .attr("class", "court-line")
+  .attr("cx", xScale(0))
+  .attr("cy", yScale(0))
+  .attr("r", Math.abs(xScale(22.86) - xScale(0)));
+
+// BACKBOARD
+svg.append("line")
+  .attr("class", "court-line")
+  .attr("x1", xScale(-90))
+  .attr("y1", yScale(-37.5))
+  .attr("x2", xScale(90))
+  .attr("y2", yScale(-37.5));
+
+// OUTER PAINT
+svg.append("rect")
+  .attr("class", "court-line")
+  .attr("x", xScale(-245))
+  .attr("y", yScale(422.5))
+  .attr("width", xScale(245) - xScale(-245))
+  .attr("height", yScale(-157.5) - yScale(422.5));
+
+// INNER PAINT
+svg.append("rect")
+  .attr("class", "court-line")
+  .attr("x", xScale(-180))
+  .attr("y", yScale(422.5))
+  .attr("width", xScale(180) - xScale(-180))
+  .attr("height", yScale(-157.5) - yScale(422.5));
+
+// RESTRICTED AREA
+svg.append("path")
+  .attr("class", "court-line")
+  .attr("d", arcPath(0, 0, 125, 125, 0, 180));
+
+// FREE THROW ARC
+svg.append("path")
+  .attr("class", "court-line")
+  .attr("d", arcPath(0, 422.5, 180, 180, 0, 180));
+
+// LEFT CORNER 3
+svg.append("line")
+  .attr("class", "court-line")
+  .attr("x1", xScale(-660))
+  .attr("x2", xScale(-660))
+  .attr("y1", yScale(-157.5))
+  .attr("y2", yScale(0));
+
+// RIGHT CORNER 3
+svg.append("line")
+  .attr("class", "court-line")
+  .attr("x1", xScale(660))
+  .attr("x2", xScale(660))
+  .attr("y1", yScale(-157.5))
+  .attr("y2", yScale(0));
+
+// 3PT ARC
+svg.append("path")
+  .attr("class", "court-line")
+  .attr("d", arcPath(0, 0, 675, 675, 12, 168));
+
+  svg.append("path").attr("class", "court-line").attr("d", arcPath(0, 422.5, 180, 180, 0, 180));
+  svg.append("path").attr("class", "court-line").attr("d", arcPath(0, 0, 125, 125, 0, 180));
+
+  svg.append("line").attr("class", "court-line").attr("x1", xScale(-660)).attr("y1", yScale(-157.5)).attr("x2", xScale(-660)).attr("y2", yScale(147.5));
+  svg.append("line").attr("class", "court-line").attr("x1", xScale(660)).attr("y1", yScale(-157.5)).attr("x2", xScale(660)).attr("y2", yScale(147.5));
+  svg.append("path").attr("class", "court-line").attr("d", arcPath(0, 0, 675, 675, 12, 167.5));
+
+  svg.append("path").attr("class", "court-line").attr("d", arcPath(0, 1242.5, 180, 180, 180, 360));
+}
+
+function isMadeShot(row) {
+  const action = String(row.ACTION || "").toLowerCase();
+  const points = Number(row.POINTS || 0);
+  const x = Number(row.COORD_X);
+  const y = Number(row.COORD_Y);
+
+  return (
+    points > 0 &&
+    x !== -1 &&
+    y !== -1 &&
+    !action.includes("free throw")
+  );
+}
+
+function isMissedShot(row) {
+  const action = String(row.ACTION || "").toLowerCase();
+  const points = Number(row.POINTS || 0);
+  const x = Number(row.COORD_X);
+  const y = Number(row.COORD_Y);
+
+  return (
+    points === 0 &&
+    x !== -1 &&
+    y !== -1 &&
+    action.includes("missed")
+  );
+}
+
+function normalizePlayerName(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replaceAll(",", "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+if (els.closeShotChart) {
+  els.closeShotChart.addEventListener("click", () => {
+    els.shootingChartPanel.classList.remove("visible");
+  });
+}
+
+function renderChord() {
+  els.chartHost.innerHTML = "";
+
+  if (!assistRows.length) {
+    els.chartHost.innerHTML = `<div class="empty">Δεν έχει φορτωθεί assist network CSV ακόμα.</div>`;
+    return;
+  }
+
+  const team = selectedBoxscoreTeam;
+  const rows = team
+    ? assistRows.filter(r => String(r.TEAM_CODE).trim() === team || String(r.TEAM).trim() === team)
+    : assistRows;
+
+  if (!rows.length) {
+    els.chartHost.innerHTML = `<div class="empty">Δεν υπάρχουν assist data για την ομάδα.</div>`;
+    return;
+  }
+
+  const linksMap = new Map();
+
+  rows.forEach(r => {
+    const source = cleanName(r.ASSIST_PLAYER);
+    const target = cleanName(r.SCORER_PLAYER);
+    const points = num(r.ASSISTED_POINTS);
+    const assists = num(r.ASSISTS);
+
+    if (!source || !target || !points) return;
+
+    const key = `${source}|||${target}`;
+
+    if (!linksMap.has(key)) {
+      linksMap.set(key, {
+        source,
+        target,
+        points: 0,
+        assists: 0
+      });
+    }
+
+    linksMap.get(key).points += points;
+    linksMap.get(key).assists += assists;
+  });
+
+  const links = Array.from(linksMap.values()).map(d => ({
+    source: d.source,
+    target: d.target,
+    value: d.points,
+    assists: d.assists
+  }));
+
+  if (!links.length) {
+    els.chartHost.innerHTML = `<div class="empty">Τα assist rows δεν έχουν τα πεδία ASSIST_PLAYER, SCORER_PLAYER, ASSISTED_POINTS.</div>`;
+    return;
+  }
+
+  const names = Array.from(new Set(links.flatMap(d => [d.source, d.target]))).sort();
+  const index = new Map(names.map((name, i) => [name, i]));
+  const matrix = Array.from({ length: names.length }, () => Array(names.length).fill(0));
+
+  const assistLookup = new Map();
+
+  links.forEach(d => {
+    matrix[index.get(d.source)][index.get(d.target)] = d.value;
+    assistLookup.set(`${d.source}|||${d.target}`, d.assists);
+  });
+
+  els.chordTitle.textContent = `Assist Chord Diagram · ${team || "Team"}`;
+
+  const width = 1040;
+  const height = 880;
+  const outerRadius = Math.min(width, height) * 0.5 - 170;
+  const innerRadius = outerRadius - 30;
+
+  const svg = d3.select(els.chartHost)
+    .append("svg")
+    .attr("viewBox", [0, 0, width, height])
+    .attr("width", width)
+    .attr("height", height);
+
+  const g = svg.append("g").attr("transform", `translate(${width / 2},${height / 2})`);
+
+  const chord = d3.chord()
+    .padAngle(0.055)
+    .sortSubgroups(d3.descending)
+    .sortChords(d3.descending);
+
+  const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
+  const ribbon = d3.ribbon().radius(innerRadius);
+
+  const color = d3.scaleOrdinal()
+    .domain(names)
+    .range(d3.schemeTableau10.concat(d3.schemeSet3));
+
+  const chords = chord(matrix);
+
+  const group = g.append("g").selectAll("g").data(chords.groups).join("g");
+
+  group.append("path")
+    .attr("d", arc)
+    .attr("fill", d => color(names[d.index]))
+    .attr("stroke", d => d3.rgb(color(names[d.index])).darker(.9))
+    .on("mouseover", function(event, d) {
+      els.tooltip
+        .style("opacity", 1)
+        .html(`<b>${escapeHtml(names[d.index])}</b><br>Outgoing assisted points: <b>${d.value}</b>`);
+      moveTooltip(event);
+    })
+    .on("mousemove", moveTooltip)
+    .on("mouseout", () => els.tooltip.style("opacity", 0));
+
+  group.append("text")
+    .each(d => d.angle = (d.startAngle + d.endAngle) / 2)
+    .attr("dy", ".35em")
+    .attr("transform", d => `
+      rotate(${d.angle * 180 / Math.PI - 90})
+      translate(${outerRadius + 18})
+      ${d.angle > Math.PI ? "rotate(180)" : ""}
+    `)
+    .attr("text-anchor", d => d.angle > Math.PI ? "end" : "start")
+    .style("font-size", names.length > 12 ? "11px" : "13px")
+    .style("font-weight", "900")
+    .style("fill", "#f7f8fb")
+    .text(d => names[d.index]);
+
+  g.append("g")
+    .attr("fill-opacity", .74)
+    .selectAll("path")
+    .data(chords)
+    .join("path")
+    .attr("d", ribbon)
+    .attr("fill", d => color(names[d.source.index]))
+    .attr("stroke", d => d3.rgb(color(names[d.source.index])).darker(.8))
+    .on("mouseover", function(event, d) {
+      d3.select(this).attr("fill-opacity", 1).attr("stroke-width", 2);
+
+      const sourceName = names[d.source.index];
+      const targetName = names[d.target.index];
+      const assistCount = assistLookup.get(`${sourceName}|||${targetName}`) || 0;
+
+      els.tooltip
+        .style("opacity", 1)
+        .html(`
+          <b>${escapeHtml(sourceName)} → ${escapeHtml(targetName)}</b><br>
+          Assists: <b>${assistCount}</b><br>
+          Assisted Points: <b>${d.source.value}</b>
+        `);
+
+      moveTooltip(event);
+    })
+    .on("mousemove", moveTooltip)
+    .on("mouseout", function() {
+      d3.select(this).attr("fill-opacity", .74).attr("stroke-width", 1);
+      els.tooltip.style("opacity", 0);
+    });
+}
+
+function renderTable(table, rows) {
+  const columns = Object.keys(rows[0] || {});
+  table.innerHTML = `
+    <thead><tr>${columns.map(c => `<th>${escapeHtml(c)}</th>`).join("")}</tr></thead>
+    <tbody>
+      ${rows.map(row => `<tr>${columns.map(c => `<td>${escapeHtml(row[c])}</td>`).join("")}</tr>`).join("")}
+    </tbody>
+  `;
+}
+
+function renderEmpty(table, message) {
+  table.innerHTML = `<tbody><tr><td class="empty">${escapeHtml(message)}</td></tr></tbody>`;
+}
+
+function moveTooltip(event) {
+  const zoom = 0.67;
+
+  const rect = document.body.getBoundingClientRect();
+
+  els.tooltip
+    .style("left", ((event.clientX - rect.left) / zoom + 14) + "px")
+    .style("top", ((event.clientY - rect.top) / zoom + 14) + "px");
+}
+
+function cleanName(name) {
+  return String(name ?? "").split(",")[0].trim();
+}
+
+function num(value) {
+  const n = Number(String(value ?? "").replace(",", "."));
+  return Number.isFinite(n) ? n : 0;
+}
+
+function normalize(value) {
+  return String(value ?? "").toLowerCase().replace(/\s+/g, "").trim();
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+async function loadCsv(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(path);
+  const text = await res.text();
+  return Papa.parse(text, { header: true, dynamicTyping: false, skipEmptyLines: true }).data;
+}
+
+async function loadJson(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(path);
+  const data = await res.json();
+  return Array.isArray(data) ? data : (data.rows || data.players || data.data || []);
+}
+
+async function autoLoadGameFiles() {
+  quarterRows = [];
+  boxscoreRows = [];
+  teamStatsRows = [];
+  assistRows = [];
+
+  if (selectedGame === "sf1") {
+    try {
+      quarterRows = await loadCsv("data/BOXSCORE_PER_QUARTER_SEMIFINAL1404_2025.csv");
+    } catch {}
+        try {
+      boxscoreRows = await loadCsv("data/sf1_boxscore.csv");
+    } catch {}
+    try {
+      teamStatsRows = await loadCsv("data/team_stats.csv");
+    } catch {}
+    try {
+      shotRows = await loadCsv("data/Shot404_2025.csv");
+    } catch {}
+      try {
+    assistRows = await loadCsv("data/Assist_Network_Summary_G404.csv");
+  } catch {}
+
+
+
+}
+
+  if (selectedGame === "sf2") {
+    try {
+      quarterRows = await loadCsv("data/BOXSCORE_PER_QUARTER_SEMIFINAL2405_2025.csv");
+    } 
+    catch {}
+    try {
+      boxscoreRows = await loadCsv("data/sf2_boxscore.csv");
+    } catch {}
+    try {
+      shotRows = await loadCsv("data/Shot405_2025.csv");
+    } catch {}
+
+          try {
+    assistRows = await loadCsv("data/Assist_Network_Summary_G405.csv");
+  } catch {}
+
+    try {
+      teamStatsRows = await loadCsv("data/team_stats_2.csv");
+    } catch {}
+  }
+
+  renderAll();
+}
+async function handleUpload(event, kind) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const text = await file.text();
+  let rows;
+
+  if (file.name.toLowerCase().endsWith(".json")) {
+    const data = JSON.parse(text);
+    rows = Array.isArray(data) ? data : (data.rows || data.players || data.data || []);
+  } else {
+    rows = Papa.parse(text, { header: true, dynamicTyping: false, skipEmptyLines: true }).data;
+  }
+
+  if (kind === "quarters") quarterRows = rows;
+  if (kind === "boxscore") boxscoreRows = rows;
+  if (kind === "assist") assistRows = rows;
+
+  renderAll();
+}
+document.querySelectorAll(".panel").forEach(panel => {
+  const header = panel.querySelector(".panel-head");
+
+  if (!header) return;
+
+  header.addEventListener("click", () => {
+    panel.classList.toggle("collapsed");
+  });
+});
+els.quarterUpload.addEventListener("change", e => handleUpload(e, "quarters"));
+els.boxscoreUpload.addEventListener("change", e => handleUpload(e, "boxscore"));
+els.assistUpload.addEventListener("change", e => handleUpload(e, "assist"));
+function renderActionPointsChart() {
+  const host = document.getElementById("actionPointsChart");
+  const title = document.getElementById("actionPointsTitle");
+  if (!host || !title) return;
+
+  host.innerHTML = "";
+
+  if (!shotRows.length) {
+    host.innerHTML = `<div class="empty">Δεν έχει φορτωθεί shot chart CSV.</div>`;
+    return;
+  }
+
+  const team = selectedBoxscoreTeam;
+  title.textContent = `Action Points · ${team}`;
+
+  const teamShots = shotRows.filter(r =>
+    String(r.TEAM || r.TEAM_CODE || r.CODETEAM || r.Team || r.TeamCode || "").trim() === team
+  );
+
+const categories = [
+  { key: "FASTBREAK", label: "Fast Break Points" },
+  { key: "SECOND_CHANCE", label: "Second Chance Points" },
+  { key: "POINTS_OFF_TURNOVER", label: "Points Off Turnovers" }
+];
+
+  const data = categories.map(category => {
+    const value = teamShots
+      .filter(r => Number(r[category.key]) === 1)
+      .reduce((sum, r) => {
+        const action = String(r.ID_ACTION || "").trim().toUpperCase();
+
+        if (action === "2FGM") return sum + 2;
+        if (action === "3FGM") return sum + 3;
+        if (action === "FTM") return sum + 1;
+
+        return sum;
+      }, 0);
+
+return {
+  category: category.label,
+  value
+};
+  });
+
+  const width = 900;
+  const height = 420;
+  const margin = { top: 30, right: 40, bottom: 90, left: 80 };
+
+  const svg = d3.select(host)
+    .append("svg")
+    .attr("viewBox", [0, 0, width, height])
+    .attr("width", width)
+    .attr("height", height);
+
+  const x = d3.scaleBand()
+    .domain(data.map(d => d.category))
+    .range([margin.left, width - margin.right])
+    .padding(0.3);
+
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.value) || 1])
+    .nice()
+    .range([height - margin.bottom, margin.top]);
+
+  svg.append("g")
+    .attr("transform", `translate(0,${height - margin.bottom})`)
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+    .attr("fill", "white")
+    .attr("font-weight", 900)
+    .attr("font-size", 13)
+    .attr("transform", "rotate(-18)")
+    .style("text-anchor", "end");
+
+  svg.append("g")
+    .attr("transform", `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y).ticks(5))
+    .selectAll("text")
+    .attr("fill", "white")
+    .attr("font-weight", 800);
+
+  svg.selectAll(".domain, .tick line")
+    .attr("stroke", "rgba(255,255,255,.35)");
+
+  svg.selectAll("rect")
+    .data(data)
+    .join("rect")
+    .attr("x", d => x(d.category))
+    .attr("y", d => y(d.value))
+    .attr("width", x.bandwidth())
+    .attr("height", d => y(0) - y(d.value))
+    .attr("rx", 12)
+    .attr("fill", "var(--gold)");
+
+  svg.selectAll(".bar-label")
+    .data(data)
+    .join("text")
+    .attr("x", d => x(d.category) + x.bandwidth() / 2)
+    .attr("y", d => y(d.value) - 10)
+    .attr("text-anchor", "middle")
+    .attr("fill", "var(--red)")
+    .attr("font-size", 22)
+    .attr("font-weight", 950)
+    .text(d => d.value);
+}
+
+autoLoadGameFiles();
+</script>
+</body>
+</html>
